@@ -16,10 +16,10 @@
                 <h1>Login</h1>
                 <form action="">
                     <div class="input">
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" required>
                     </div>
                     <div>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" required>
                     </div>
                     <div class="loginButton">
                         <input type="submit" value="Login">
