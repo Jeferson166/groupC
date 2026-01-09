@@ -1,0 +1,392 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+        font-size: 16px
+    }
+
+    body{
+        background-image: url(assets/doctor-medical-BG-V2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        background-color:rgb(20, 86, 142, 0.5);
+        padding: 10px 0 30px 0;
+        width: 360px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }.container h1{
+        font-size: 2rem;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }.container form{
+        flex: 1;
+        padding-top: 20px;
+    }
+
+    .iconContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }.icon{
+        padding: 0;
+        margin: 0;
+        background-image: url(assets/ProfileIcon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+    }
+
+    .input{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input{
+        margin-top: 15px;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }
+
+    .loginButton{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input[type="submit"]{
+        padding: 6px;
+        background-color: rgb(20, 86, 142);
+        margin-top: 50px;
+        font-size: 1.2rem;
+        width: 10em;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }input[type="submit"]:hover{
+        background-color: rgb(15, 60, 100);
+    }
+
+@media screen and (min-width: 359px) and (max-width: 479px) {
+    html{
+        font-size: 16px
+    }
+
+    body{
+        background-image: url(assets/doctor-medical-BG-V2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        background-color:rgb(20, 86, 142, 0.5);
+        padding: 10px 0 30px 0;
+        width: 360px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }.container h1{
+        font-size: 2rem;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }.container form{
+        flex: 1;
+        padding-top: 20px;
+    }
+
+    .iconContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }.icon{
+        padding: 0;
+        margin: 0;
+        background-image: url(assets/ProfileIcon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+    }
+
+    .input{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input{
+        margin-top: 15px;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }
+
+    .loginButton{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input[type="submit"]{
+        padding: 6px;
+        background-color: rgb(20, 86, 142);
+        margin-top: 50px;
+        font-size: 1.2rem;
+        width: 10em;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }input[type="submit"]:hover{
+        background-color: rgb(15, 60, 100);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    html{
+        font-size: 16px
+    }
+
+    body{
+        background-image: url(assets/doctor-medical-BG-V2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        background-color:rgb(20, 86, 142, 0.5);
+        padding: 10px 0 30px 0;
+        width: 360px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }.container h1{
+        font-size: 2rem;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }.container form{
+        flex: 1;
+        padding-top: 20px;
+    }
+
+    .iconContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }.icon{
+        padding: 0;
+        margin: 0;
+        background-image: url(assets/ProfileIcon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+    }
+
+    .input{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input{
+        margin-top: 15px;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }
+
+    .loginButton{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input[type="submit"]{
+        padding: 6px;
+        background-color: rgb(20, 86, 142);
+        margin-top: 50px;
+        font-size: 1.2rem;
+        width: 10em;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }input[type="submit"]:hover{
+        background-color: rgb(15, 60, 100);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1080px){
+    html{
+        font-size: 16px
+    }
+
+    body{
+        background-image: url(assets/doctor-medical-BG-V2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        background-color:rgb(20, 86, 142, 0.5);
+        padding: 10px 0 30px 0;
+        width: 360px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }.container h1{
+        font-size: 2rem;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }.container form{
+        flex: 1;
+        padding-top: 20px;
+    }
+
+    .iconContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }.icon{
+        padding: 0;
+        margin: 0;
+        background-image: url(assets/ProfileIcon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+    }
+
+    .input{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input{
+        margin-top: 15px;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }
+
+    .loginButton{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }input[type="submit"]{
+        padding: 6px;
+        background-color: rgb(20, 86, 142);
+        margin-top: 50px;
+        font-size: 1.2rem;
+        width: 10em;
+        color: azure;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 10px;
+        border-style: none;
+    }input[type="submit"]:hover{
+        background-color: rgb(15, 60, 100);
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1440px){
+    
+}
