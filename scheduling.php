@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="scheduling.css">
     <link rel="stylesheet" href="sidePanelAdmin.css">
 </head>
 <body>
