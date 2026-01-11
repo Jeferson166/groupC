@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.row1{
+    width: 11vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border-right: 1px solid rgb(214, 214, 214);
+    color: rgb(24, 0, 172);
+    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logoContainer{
+}.logo{
+    background-image: url(assets/hospitalLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+.tabOne{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.subject{
+    flex: 1;
+}
+
+.icon{
+    width: 25%;
+}
+
+.dashboardTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.dashboardIcon{
+    background-image: url(assets/dashboardIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.patientManageTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.patManageIcon{
+    background-image: url(assets/patientIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3em;
+    width: 2.3em;
+}
+
+.app-schedTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.app-schedIcon{
+    background-image: url(assets/scheduleIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.facilitiesTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.facilitiesIcon{
+    background-image: url(assets/medicalIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.staffManageTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.staffManageIcon{
+    background-image: url(assets/staffIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.notificationTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.notificationIcon{
+    background-image: url(assets/notificaionIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+
+/*Row Two*/
+.row2{
+    width: 87vw;
+    background-color: rgb(214, 214, 214, 0.4);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(24, 0, 172);
+}.row2 .header{
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+}
+.generalViewOne{
+    display: flex;
+    justify-content: space-around;
+}
+
+.generalViewTwo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.generalViewThree{
+    display: flex;
+    justify-content: space-around;
+}
+
