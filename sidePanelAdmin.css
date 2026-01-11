@@ -55,14 +55,16 @@ section{
     width: 25%;
 }
 
-.dashboardTab{
+.sidePanelContainers{
     margin-top: 3vh;
     margin-top: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-}.dashboardIcon{
+}
+
+.dashboardIcon{
     flex: 1;
     background-image: url(assets/dashboardIcon.png);
     background-position: center;
@@ -72,12 +74,7 @@ section{
     width: 2.3em;
 }
 
-.patientManageTab{
-    margin-top: 3vh;
-    margin-top: 3vh;
-    display: flex;
-    width: 100%;
-}.patManageIcon{
+.patManageIcon{
     background-image: url(assets/patientIcon.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -86,11 +83,7 @@ section{
     width: 1.8em;
 }
 
-.appSchedTab{
-    margin-top: 3vh;
-    display: flex;
-    width: 100%;
-}.appSchedIcon{
+.appSchedIcon{
     background-image: url(assets/scheduleIcon.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -99,11 +92,7 @@ section{
     width: 2.3em;
 }
 
-.facilitiesTab{
-    margin-top: 3vh;
-    display: flex;
-    width: 100%;
-}.facilitiesIcon{
+.facilitiesIcon{
     background-image: url(assets/medicalIcon.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -112,11 +101,7 @@ section{
     width: 2.3em;
 }
 
-.staffManageTab{
-    margin-top: 3vh;
-    display: flex;
-    width: 100%;
-}.staffManageIcon{
+.staffManageIcon{
     background-image: url(assets/staffIcon.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -125,11 +110,7 @@ section{
     width: 2.3em;
 }
 
-.notificationTab{
-    margin-top: 3vh;
-    display: flex;
-    width: 100%;
-}.notificationIcon{
+.notificationIcon{
     background-image: url(assets/notificaionIcon.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -149,12 +130,7 @@ section{
     text-align: center;
 }
 
-.settingTab{
-    margin-top: 3vh;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-}.settingIcon{
+.settingIcon{
     flex: 1;
     background-image: url(assets/setting.png);
     background-position: center;
@@ -164,12 +140,7 @@ section{
     width: 2.3em;
 }
 
-.logOut{
-    margin-top: 3vh;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}.logOutIcon{
+.logOutIcon{
     background-image: url(assets/logout.png);
     background-position: center;
     background-repeat: no-repeat;
