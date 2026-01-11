@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="sidePanelAdmin.css">
 </head>
 <body>
     <section>
 <!--First row-->
         <div class="row1">
-            <div class="logo"></div>
+            <div class="logoContainer">
+                <div class="logo"></div>
+            </div>
             <div class="tabOne">
                 <div class="dashboardTab">
                     <div class="icon"><div class="dashboardIcon"></div></div>
@@ -24,8 +27,8 @@
                         <p>Patient Management</p>
                     </div>
                 </div>
-                <div class="app-schedTab">
-                    <div class="icon"><div class="app-schedIcon"></div></div>
+                <div class="appSchedTab">
+                    <div class="icon"><div class="appSchedIcon"></div></div>
                     <div class="subject">
                         <p>Appointments & Scheduling</p>
                     </div>
@@ -50,16 +53,16 @@
                 </div>
             </div>
             <div class="tabTwo">
-                <div class="logOut">
-                    <div class="icon"><div class="logOutIcon"></div></div>
-                    <div class="subject">
-                        <p>Log out</p>
-                    </div>
-                </div>
                 <div class="settingTab">
                     <div class="icon"><div class="settingIcon"></div></div>
                     <div class="subject">
                         <p>Settings</p>
+                    </div>
+                </div>
+                <div class="logOut">
+                    <div class="icon"><div class="logOutIcon"></div></div>
+                    <div class="subject">
+                        <p>Log out</p>
                     </div>
                 </div>
             </div>
