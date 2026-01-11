@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="loginStyle.css">
+    <script src="loginBehavior.js"></script>
+    
+    <script>
+        document.getElementById(greetings).innerHTML ="Welcome!";
+    </script>
+
 </head>
 <body>
     <section class="section">
@@ -13,16 +19,16 @@
                 <div class="iconContainer">
                     <div class="icon"></div>
                 </div>
-                <h1>Login</h1>
+                <h1 id="greetings">Hello!</h1>
                 <form action="">
                     <div class="input">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" placeholder="Email" id="email" required>
                     </div>
                     <div>
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" id="password" required>
                     </div>
                     <div class="loginButton">
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Login" id="bttn">
                     </div>
                 </form>
             </div>

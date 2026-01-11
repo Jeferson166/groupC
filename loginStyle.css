@@ -51,7 +51,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 20px 0 0 0;
         margin: 0;
     }.icon{
         padding: 0;
@@ -70,8 +70,8 @@ html{
         flex-wrap: wrap;
     }input{
         margin-top: 15px;
-        padding: 5px;
-        font-size: 1.3rem;
+        padding: 10px;
+        font-size: 1.1rem;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -86,9 +86,9 @@ html{
     }input[type="submit"]{
         padding: 6px;
         background-color: rgb(20, 86, 142);
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 1.2rem;
-        width: 10em;
+        width: 8em;
         color: azure;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
@@ -146,7 +146,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 20px 0 0 0;
         margin: 0;
     }.icon{
         padding: 0;
@@ -165,8 +165,8 @@ html{
         flex-wrap: wrap;
     }input{
         margin-top: 15px;
-        padding: 5px;
-        font-size: 1.3rem;
+        padding: 10px;
+        font-size: 1.1rem;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -181,9 +181,9 @@ html{
     }input[type="submit"]{
         padding: 6px;
         background-color: rgb(20, 86, 142);
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 1.2rem;
-        width: 10em;
+        width: 8em;
         color: azure;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
@@ -242,7 +242,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 20px 0 0 0;
         margin: 0;
     }.icon{
         padding: 0;
@@ -261,8 +261,8 @@ html{
         flex-wrap: wrap;
     }input{
         margin-top: 15px;
-        padding: 5px;
-        font-size: 1.3rem;
+        padding: 10px;
+        font-size: 1.1rem;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -277,9 +277,9 @@ html{
     }input[type="submit"]{
         padding: 6px;
         background-color: rgb(20, 86, 142);
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 1.2rem;
-        width: 10em;
+        width: 8em;
         color: azure;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
@@ -338,7 +338,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 20px 0 0 0;
         margin: 0;
     }.icon{
         padding: 0;
@@ -357,8 +357,8 @@ html{
         flex-wrap: wrap;
     }input{
         margin-top: 15px;
-        padding: 5px;
-        font-size: 1.3rem;
+        padding: 10px;
+        font-size: 1.1rem;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -373,9 +373,9 @@ html{
     }input[type="submit"]{
         padding: 6px;
         background-color: rgb(20, 86, 142);
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 1.2rem;
-        width: 10em;
+        width: 8em;
         color: azure;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
