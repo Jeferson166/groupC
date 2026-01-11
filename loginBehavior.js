@@ -11,7 +11,11 @@ password.addEventListener("focus", function(){
 });
 
 button.addEventListener("click", function(){
+    event.preventDefault();
     if (email.value == "abc" && password.value == "abcd") {
-        window.location.href = "https://www.youtube.com";
+        document.getElementById("greetings").innerHTML = "Welcome!";
+        setTimeout(function() {
+            window.location.href = "dashboard.php";
+        }, 800);
     }
-})
+});
