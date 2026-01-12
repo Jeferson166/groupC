@@ -10,19 +10,33 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(24, 0, 172);
+    display: flex;
+    flex-direction:column;
 }.row2 .header{
     text-align: right;
     background-color: rgb(255, 255, 255);
 }
+
+.generalViewOneContainer{
+    flex: 1;
+}
+
 .generalViewOne{
     display: flex;
     justify-content: space-around;
 }
 
+.generalViewTwoContainer{
+    flex: 1;
+}
+
 .generalViewTwo{
     display: flex;
     justify-content: space-around;
+}
+
+.generalViewThreeContainer{
+    flex: 1;
 }
 
 .generalViewThree{
