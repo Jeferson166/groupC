@@ -148,3 +148,45 @@ section{
     height: 2.3em;
     width: 2.3em;
 }
+
+/*Row 2*/
+.row2{
+    width: 85vw;
+    background-color: rgb(214, 214, 214, 0.4);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction:column;
+}.row2 .header{
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+}
+
+.usernameContainer{
+    flex: 0.01;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(214, 214, 214, 0.6);
+    padding: 5px 0 5px 0;
+    margin-bottom: 20px;
+}
+
+.userNameIcon{
+    background-image: url(assets/user.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+}
+
+.userName{
+    flex: 1;
+}
+.userIconContainer{
+}

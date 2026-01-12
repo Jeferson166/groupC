@@ -70,22 +70,13 @@
         </div>
 <!--Second row-->
         <div class="row2">
-            <div>
-                <div class="header">Username</div>
-            </div>
-            <div class="generalViewOne">
-                <div class="tPatients">Total Patients</div>
-                <div class="tFacilites">Total Facilities</div>
-                <div class="appointments">Upcomming Appointments</div>
-                <div class="tStaff">Total Staff</div>
-            </div>
-            <div class="generalViewTwo">
-                <div class="dailyAppointment">Daily Appointment</div>
-                <div class="patientSummary">Patient Summary</div>
-            </div>
-            <div class="generalViewThree">
-                <div class="recentAppointments">Recent Appointments</div>
-                <div class="staffOverview">Staff Overview</div>
+            <div class="usernameContainer">
+                <div class="userName">
+                    <div class="header">Username</div>
+                </div>
+                <div class="userIconContainer">
+                    <div class="userNameIcon"></div>
+                </div>
             </div>
         </div>
     </section>
