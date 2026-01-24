@@ -15,7 +15,7 @@ button.addEventListener("click", function(){
     if (email.value == "abc" && password.value == "abcd") {
         document.getElementById("greetings").innerHTML = "Welcome!";
         setTimeout(function() {
-            window.location.href = "dashboard.php";
+            window.location.href = "/groupC/Admin_folder/dashboard_page.php";
         }, 800);
     }
 });
