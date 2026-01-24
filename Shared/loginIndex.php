@@ -30,10 +30,6 @@
             </div>
         </div>
     </section>
-    <script src="/groupC/loginBehavior.js"></script>
-<!--
-    <script>
-        document.getElementById("greetings").innerHTML = "Welcome!";
-    </script>-->
+    <script src="/groupC/Shared/loginBehavior.js"></script>
 </body>
 </html>
