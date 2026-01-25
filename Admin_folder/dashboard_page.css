@@ -71,25 +71,59 @@
     font-size: 9rem;
 }
 
-.border{
-    border: solid black;
-    border-width: 1px 0 1px 0;
-    margin-top: 15px;
+/*Table*/
+.table_container{
+    border-collapse: collapse;
+    margin: 25px 0 10px 0;
 }
-.border_right{
-    border: solid black;
-    border-width: 0 1px 0 0;
-}
-.horizontal_gap{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.vertical_gap{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.table{
+
+.table_container thead tr th,
+.table_container tbody tr td{
     width: 25%;
+    text-align: left;
+    overflow-wrap: break-word;
+    padding: 15px 5px 5px 5px;
+}
+
+.table_container thead{
+    flex: 1 1 100% !important;
+}
+
+.table_container thead tr{
+    border: solid black;
+    border-width: 0 0 1px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.table_container tbody{
+    flex: 1 1 100% !important;
+}
+
+.table_container tbody tr{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    border: solid rgba(0, 0, 0, 0.137);
+    border-width: 0 0 1px 0;
+}
+
+.staff_overview_table thead th{
+    font-weight: normal !important;
+}.staff_overview_table thead tr{
+    justify-content: space-around;
+}
+
+.staff_overview_table{
+    width: 100%;
+}
+
+.staff_overview_table tbody tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 4rem;
 }
 
 .Dashboard_patient_icon{
