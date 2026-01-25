@@ -111,29 +111,49 @@
                 <div class="dashboard_content_row">
                     <div class="row2_content round_border">
                         <p class="title even_row">Recent Appointments</p>
-                        <table>
-                            <tr>
-                                <th>Patient</th>
-                                <th>Doctor</th>
-                                <th>Date</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td>patient A</td>
-                                <td>Doctor A</td>
-                                <td>Date A</td>
-                                <td>Status A</td>
-                            </tr>
-                            <tr>
-                                <td>patient B</td>
-                                <td>Doctor B</td>
-                                <td>Date B</td>
-                                <td>Status B</td>
-                            </tr>
+                        <table class="table_container even_row">
+                            <thead>
+                                <tr>
+                                    <th>Patient</th>
+                                    <th>Doctor</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Patient A</td>
+                                    <td>Doctor A</td>
+                                    <td>Date A</td>
+                                    <td>Status A</td>
+                                </tr>
+                                <tr>
+                                    <td>Patient B</td>
+                                    <td>Doctor B</td>
+                                    <td>Date B</td>
+                                    <td>Status B</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
-                    <div class="row2_content">
-                        <p class="title">Staff Overview</p>
+                    <div class="row2_content round_border">
+                        <p class="title even_row">Staff Overview</p>
+                        <table class="staff_overview_table">
+                            <thead>
+                                <tr class="sub_title_content">
+                                    <th>Doctors on duty</th>
+                                    <th>Active nurse</th>
+                                    <th>Present Assistant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
