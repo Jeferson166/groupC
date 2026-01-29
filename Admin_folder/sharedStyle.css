@@ -198,13 +198,37 @@ main li{
         width: 100vw;
     }
     aside{
-        position: relative;
-        height: auto;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        height: 100vh;
+        overflow-y: auto;
         width: 20%;
+        z-index: 50;
     }
     aside nav{
-        position: sticky !important;
-        top: 0;
+        position: relative !important;
+        top: auto;
+        height: 100%;
+    }
+    .side_panel_ctner_1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 15px;
+    }
+    .side_panel_ctner_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .side_panel_expanded{  
+        width: 13vw;
+        overflow-x: hidden;
     }
     main{
         flex: 1;
@@ -212,5 +236,33 @@ main li{
     .expand_btn{
         visibility: hidden !important;
         pointer-events: none !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1500px){
+    .side_panel_expanded{  
+        width: 13vw;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 2560px){
+    .side_panel_expanded{  
+        width: 11vw;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    .side_panel_expanded{  
+        width: 23vw;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .side_panel_expanded{  
+        width: 18vw;
+        overflow-x: hidden;
     }
 }
