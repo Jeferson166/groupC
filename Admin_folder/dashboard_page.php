@@ -34,7 +34,7 @@
                         //DONE in mobile view; Total Patients icon should not be seen
                         //DONE in mobile view; the patients summary sub titles, should be in center
                         //DONE in mobile view; the patients summary counts, should be extra bigggg
-                        //TODO in mobile view; make mobile view table
+                        //DONE in mobile view; make mobile view table
 
 -->
                         <div class="side_panel_btn_ctnair">
