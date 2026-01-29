@@ -142,7 +142,7 @@ main li{
     display: flex;
     justify-content: flex-end;
     height: fit-content;
-    padding: 1rem;
+    padding: 1rem 1.5rem 1rem 1rem;
     width: 100%;
     background-color: hsl(0, 0%, 95%);
 }
@@ -180,10 +180,6 @@ main li{
         position: fixed !important;
         height: 100vh !important;
     }
-    aside nav{
-        position: sticky !important;
-        top: 0;
-    }
     .expand_btn{
         visibility: visible !important;
         pointer-events: visible !important;
@@ -198,13 +194,19 @@ main li{
         width: 100vw;
     }
     aside{
-        position: relative;
-        height: auto;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        height: 100vh;
+        overflow-y: auto;
         width: 20%;
+        z-index: 50;
     }
     aside nav{
-        position: sticky !important;
-        top: 0;
+        /* keep nav layout as-is; nav will scroll inside aside if needed */
+        position: relative !important;
+        top: auto;
     }
     main{
         flex: 1;
