@@ -141,7 +141,7 @@
 }
 
 @media only screen and (min-width: 426px) and (max-width: 1440px){
-
+    
     .column{
         flex-wrap: nowrap;
     }
@@ -150,9 +150,7 @@
     }
     .patient_smry{
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
     }
     .table_mobile_view{
         display: none !important;
