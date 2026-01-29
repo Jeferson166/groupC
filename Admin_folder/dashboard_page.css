@@ -1,165 +1,272 @@
-.dashboard_content{
-    padding: 15px;
-}
-
-.dashboard_content_row{
-    display: flex;
-    gap: 20px;
-    margin: 10px;
-    flex-wrap: wrap;
-}
-.dont_wrap{
-    flex-wrap: nowrap;
-}
-.wrap_it{
-    flex-wrap: wrap;
-}
-
-.dashboard_content1{
-    flex: 1;
+.main_content_row1{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
+}
+.main_content_row2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.row1_content{
-    flex: 1;
+.content_container_bg{
+    padding: 1rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: end;
-    align-items: center;
-    padding: 10px;
     gap: 10px;
 }
 
 .title{
-    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
 }
 
-.row1_result{
-    font-size: 4rem;
+.main_content1_text{
+    font-size: 3.125rem;
+}
+
+/*Specific content*/
+.daily_app_info{
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}.h1{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}.daily_app_count{
+    font-size: 1.5625rem;
+    color: black;
 }
 
-.row2_content{
-    flex: 1;
-    padding: 10px;
+.patient_smry{
     display: flex;
     flex-wrap: wrap;
-}
-
-.graph_image{
-    background-image: url(Admin-assets/TestGraph.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 15rem;
-    width: 20rem;
-    flex: 10 1 1px;
-}
-
-.sub_title_content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    gap: 5px;
-}
-
-.even_column p{
-    font-size: 9rem;
-}
-
-/*Table*/
-.table_container{
-    border-collapse: collapse;
-    margin: 25px 0 10px 0;
-}
-
-.table_container thead tr th,
-.table_container tbody tr td{
-    width: 25%;
-    text-align: left;
-    overflow-wrap: break-word;
-    padding: 15px 5px 5px 5px;
-}
-
-.table_container thead{
-    flex: 1 1 100% !important;
-}
-
-.table_container thead tr{
-    border: solid black;
-    border-width: 0 0 1px 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-.table_container tbody{
-    flex: 1 1 100% !important;
-}
-
-.table_container tbody tr{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    border: solid rgba(0, 0, 0, 0.137);
-    border-width: 0 0 1px 0;
-}
-
-.staff_overview_table thead th{
-    font-weight: normal !important;
-}.staff_overview_table thead tr{
-    justify-content: space-around;
-}
-
-.staff_overview_table{
     width: 100%;
+    flex-direction: column;
+}.big_ass_text{
+    font-size: 5rem;
 }
-
-.staff_overview_table tbody tr{
+.column{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 4rem;
+    gap: 1rem;
+    flex: 1;
+}
+/*X axis, vertical alignment*/
+.content_right{
+    justify-content: flex-end;
+}
+.content_left{
+    justify-content: flex-start;
+}
+.content_center{
+    justify-content: center;
+    text-align: center;
+}
+.take_full_width{
+    width: 100%;
+    flex: 1;
 }
 
-.Dashboard_patient_icon{
-    background-image: url(Admin-assets/T_PatientIcon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
+/*For table*/
+.patient_information{
+ margin: 10px 5px 0 0;
 }
 
-.Dashboard_facilities_icon{
-    background-image: url(Admin-assets/T_PatientIcon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
+/* hide mobile table view by default (shown explicitly on small screens below) */
+.table_mobile_view{
+    display: none !important;
 }
 
-.Dashboard_appointments_icon{
-    background-image: url(Admin-assets/T_PatientIcon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
+/*Text color*/
+.important_text{
+    color: hsla(0, 0%, 0%, 95%) !important;
+}
+.information_text{
+    color: hsla(0, 0%, 0%, 70%) !important;
 }
 
-.Dashboard_staff_icon{
-    background-image: url(Admin-assets/TStaffIcon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
+@media only screen and (min-width: 300px) and (max-width: 425px){
+    /*to make the container take the full width for mobile view*/
+    .content_container_bg{
+        width:88vw;
+    }
+    .hide_me{
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .mobile_V_table{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        border: 2px solid hsla(0, 0%, 0%, 0.062);
+        border-radius: 5px;
+        width: 100%;
+        height: 350px;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+
+    .mobile_V_cards{
+        display: flex;
+        padding: 15px 10px 10px 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .table_mobile_view{
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .column{
+        flex-wrap: wrap;
+    }
+    
+    .table_desktop_view{
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
 }
 
-/*ceccccc2*/
+@media only screen and (min-width: 426px) and (max-width: 1440px){
+    
+    .column{
+        flex-wrap: nowrap;
+    }
+    .daily_app_info svg{
+        justify-content: center;
+    }
+    .patient_smry{
+        flex: 1;
+        flex-direction: row;
+    }
+    .table_mobile_view{
+        display: none !important;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .table_container{
+        height: 350px;
+        overflow-x: scroll;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+
+    .table_header{
+        font-size: 1.4375rem;
+        color: hsl(0, 0%, 30%);
+        position: sticky;
+        top: 0;
+        background-color: hsl(0, 0%, 95%);
+        margin-bottom: 5px;
+    }
+
+    thead,
+    tbody{
+        display: table-header-group;
+    }
+
+    thead tr,
+    tbody tr{
+        display: table-row;
+    }
+
+    thead tr th,
+    tbody tr td{
+        display: table-cell;
+        text-align: left;
+        padding: 8px 10px;
+    }
+
+    tbody tr:nth-last-of-type(even){
+        background-color: hsl(0, 0%, 90%);
+    }
+}
+
+
+@media only screen and (min-width: 1441px) and (max-width: 2600px){
+    
+    .column{
+        flex-wrap: nowrap;
+        flex: 1;
+    }
+    .content_1441{
+        justify-content: flex-end;
+        width: 100%;
+        flex: 1;
+    }
+    .daily_app_info svg{
+        justify-content: center;
+    }
+    .patient_smry{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .table_mobile_view{
+        display: none !important;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .table_container{
+        height: 350px;
+        overflow-x: scroll;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+
+    .table_header{
+        font-size: 1.4375rem;
+        color: hsl(0, 0%, 30%);
+        position: sticky;
+        top: 0;
+        background-color: hsl(0, 0%, 95%);
+        margin-bottom: 5px;
+    }
+
+    thead,
+    tbody{
+        display: table-header-group;
+    }
+
+    thead tr,
+    tbody tr{
+        display: table-row;
+    }
+
+    thead tr th,
+    tbody tr td{
+        display: table-cell;
+        text-align: left;
+        padding: 8px 10px;
+    }
+
+    tbody tr:nth-last-of-type(even){
+        background-color: hsl(0, 0%, 90%);
+    }
+}
