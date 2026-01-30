@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    flex: 1 1 100%;
 }
 .main_content_row2{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    flex: 1 1 100%;
 }
 
 .content_container_bg{
@@ -14,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    flex: 1 1 0;
 }
 
 .title{
@@ -58,17 +61,20 @@
 /*X axis, vertical alignment*/
 .content_right{
     justify-content: flex-end;
+    flex-basis: 100%;
 }
 .content_left{
     justify-content: flex-start;
+    flex-basis: 100%;
 }
 .content_center{
     justify-content: center;
     text-align: center;
+    flex-basis: 100%;
 }
 .take_full_width{
     width: 100%;
-    flex: 1;
+    flex-basis: 100%;
 }
 
 /*For table*/
@@ -90,9 +96,10 @@
 }
 
 @media only screen and (min-width: 300px) and (max-width: 425px){
-    /*to make the container take the full width for mobile view*/
+    /*mobile view*/
     .content_container_bg{
         width:88vw;
+        flex: 1 1 100%;
     }
     .hide_me{
         visibility: hidden;
@@ -138,12 +145,19 @@
         pointer-events: none;
         opacity: 0;
     }
+    .patient_smry .h2{
+        flex: 1 1 100%;
+    }
+    .patient_smry{
+        flex-wrap: nowrap;
+    }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1440px){
-    
+@media only screen and (min-width: 426px) and (max-width: 3000px){
+    /*Desktop View*/
     .column{
         flex-wrap: nowrap;
+        flex: 1 1 0;
     }
     .daily_app_info svg{
         justify-content: center;
@@ -162,6 +176,7 @@
     .table_container{
         height: 350px;
         overflow-x: scroll;
+        flex: 1 1 100%;
     }
 
     table{
@@ -201,72 +216,14 @@
     }
 }
 
-
-@media only screen and (min-width: 1441px) and (max-width: 2600px){
-    
-    .column{
-        flex-wrap: nowrap;
-        flex: 1;
+/*Overriding style only*/
+@media only screen and (min-width: 957px) and (max-width: 2628px){
+    .main_content1_text{
+        font-size: 6.25rem;
     }
-    .content_1441{
-        justify-content: flex-end;
-        width: 100%;
-        flex: 1;
-    }
-    .daily_app_info svg{
-        justify-content: center;
-    }
-    .patient_smry{
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .table_mobile_view{
-        display: none !important;
-        visibility: hidden;
-        pointer-events: none;
-        opacity: 0;
-    }
-
-    .table_container{
-        height: 350px;
-        overflow-x: scroll;
-    }
-
-    table{
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: auto;
-    }
-
-    .table_header{
-        font-size: 1.4375rem;
-        color: hsl(0, 0%, 30%);
-        position: sticky;
-        top: 0;
-        background-color: hsl(0, 0%, 95%);
-        margin-bottom: 5px;
-    }
-
-    thead,
-    tbody{
-        display: table-header-group;
-    }
-
-    thead tr,
-    tbody tr{
-        display: table-row;
-    }
-
-    thead tr th,
-    tbody tr td{
-        display: table-cell;
-        text-align: left;
-        padding: 8px 10px;
-    }
-
-    tbody tr:nth-last-of-type(even){
-        background-color: hsl(0, 0%, 90%);
+}
+@media only screen and (min-width: 1341px) and (max-width: 2628px){
+    .patient_smry .h2{
+        flex: 1 1 100%;
     }
 }
