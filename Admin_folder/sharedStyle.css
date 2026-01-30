@@ -127,6 +127,7 @@ aside nav li a{
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 main li{
     list-style: none;
