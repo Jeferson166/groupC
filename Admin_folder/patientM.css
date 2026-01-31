@@ -1,0 +1,153 @@
+/*.content_container{
+    flex: 1 1 100%;
+} This make side panel bigger*/
+
+main{
+    background-color: hsla(226, 71%, 40%, 0.048) !important;
+    min-height: 100vh;
+    align-content: baseline;
+}
+
+.main_container_bg{
+    background-color: hsl(210, 40%, 98%) !important;
+}
+
+.main_container{
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.content_row{
+    display: flex;
+    width: 100%;
+}
+
+.btn_tab_active1{
+    align-items: center;
+    display: flex;
+    flex: 2 1 100%;
+    gap: 5px;
+}
+.btn_tab_active0{
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.search_container{
+    display: flex;
+    flex: 1 1 0;
+}
+
+.btn_actv1{
+    visibility: visible;
+}.btn_actv0{
+    visibility: hidden;
+    display: none;
+}
+
+.search_bar,
+.search_bar:focus-visible{
+    border-radius: 5px;
+    padding: 5px;
+    flex-grow: 1;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 0%, 0.192) !important;
+}
+
+/*Mobile view patients details layout*/
+.cards_container{
+    display: grid;
+    gap: 10px;
+    grid-auto-columns:minmax(200px, 2500px);
+    min-height: 296px;
+    max-height: 500px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+.patient_card{
+    display: grid;
+    background-color: hsla(222, 43%, 91%, 0.507);
+    grid-template-columns: 50% 20%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "patient_information_1 patient_information_2"
+    "patient_information_3 patient_information_3"
+    "patient_information_4 patient_information_5"
+    "patient_information_6 patient_information_6"
+    "patient_information_7 patient_information_7";
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    border-radius: 10px;
+}
+.patient_information_4,
+.patient_information_5{
+    display: flex;
+    gap: 10px;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 427px){
+    /*mobile view*/
+    .btn_tab_active1,
+    .btn_tab_active0{
+        padding:5px 5px 2px 5px;
+        border: solid;
+        border-width: 0 0 1px 0;
+    }
+    .btn_tab_active1{
+        border-radius: 10px 10px 0 0;
+        background-color: hsla(226, 71%, 40%, 0.377);
+        border-color: hsl(226, 71%, 40%);
+    }.btn_tab_active0{
+        border-radius: 10px 10px 0 0;
+        background-color: hsla(226, 71%, 40%, 0.116);
+        border-color: hsl(226, 71%, 40%);
+    }
+    /*Mobile view patient details*/
+    .mobile_view{
+        display: grid;
+    }
+
+    /*Patient List text*/
+    .patient_information_1{
+        overflow-wrap: break-word;
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: hsl(0 0% 5%);
+    }
+
+    .patient_information_2{
+        display: grid;
+        text-align: right;
+        align-items: center;
+    }
+
+    .patient_information_3,
+    .patient_information_4,
+    .patient_information_5,
+    .patient_information_6,
+    .patient_information_7,
+    .patient_information_8,
+    .patient_information_9{
+        color: hsl(0 0% 30%);
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 3000px){
+    /*Desktop View*/
+    
+}
+
+/*Overriding style only*/
+@media only screen and (min-width: 953px) and (max-width: 2628px){
+    
+}
+@media only screen and (min-width: 1341px) and (max-width: 2628px){
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}

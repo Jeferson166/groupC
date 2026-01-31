@@ -36,6 +36,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    margin: 0 1rem;
 }.h1{
     display: flex;
     justify-content: center;
@@ -72,6 +73,11 @@
     text-align: center;
     flex-basis: 100%;
 }
+.just_center{
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 0;
+}
 .take_full_width{
     width: 100%;
     flex-basis: 100%;
@@ -105,6 +111,12 @@
         visibility: hidden;
         pointer-events: none;
         opacity: 0;
+    }
+
+    .content_1441{
+        justify-content: center;
+        text-align: center;
+        flex-basis: 100%;
     }
 
     .mobile_V_table{
@@ -155,6 +167,9 @@
 
 @media only screen and (min-width: 426px) and (max-width: 3000px){
     /*Desktop View*/
+    .staffO_txt{
+        font-size: 3.125rem;
+    }
     .column{
         flex-wrap: nowrap;
         flex: 1 1 0;
@@ -165,6 +180,12 @@
     .patient_smry{
         flex: 1;
         flex-direction: row;
+        align-content: center;
+    }
+    .content_1441{
+        justify-content: center;
+        text-align: center;
+        flex-basis: 100%;
     }
     .table_mobile_view{
         display: none !important;
@@ -217,13 +238,21 @@
 }
 
 /*Overriding style only*/
-@media only screen and (min-width: 957px) and (max-width: 2628px){
-    .main_content1_text{
+@media only screen and (min-width: 953px) and (max-width: 2628px){
+    .staffO_txt{
         font-size: 6.25rem;
     }
 }
 @media only screen and (min-width: 1341px) and (max-width: 2628px){
     .patient_smry .h2{
         flex: 1 1 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .content_1441{
+        justify-content: flex-end;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
