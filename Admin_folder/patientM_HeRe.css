@@ -1,7 +1,3 @@
-/*.content_container{
-    flex: 1 1 100%;
-} This make side panel bigger*/
-
 main{
     background-color: hsla(226, 71%, 40%, 0.048) !important;
     min-height: 100vh;
@@ -61,34 +57,28 @@ main{
 
 /*Mobile view patients details layout*/
 .cards_container{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    grid-auto-columns:minmax(200px, 2500px);
-    min-height: 296px;
     max-height: 575px;
     overflow-y: scroll;
     border-radius: 10px;
 }
-.patient_card{
-    display: grid;
-    background-color: hsla(222, 43%, 91%, 0.507);
-    grid-template-columns: 50% 20%;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: 
-    "patient_information_1 patient_information_2"
-    "patient_information_3 patient_information_3"
-    "patient_information_4 patient_information_5"
-    "patient_information_6 patient_information_6"
-    "patient_information_7 patient_information_7";
-    padding: 10px;
-    row-gap: 10px;
-    column-gap: 10px;
-    border-radius: 10px;
-}
-.patient_information_4,
-.patient_information_5{
+.cards_container div{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: baseline;
+}
+.paitent_info_folder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px;
     gap: 10px;
+    margin: 5px 5px;
+    background-color: hsla(222, 43%, 91%, 0.507);
 
 }
 
@@ -103,40 +93,12 @@ main{
     .btn_tab_active1{
         border-radius: 10px 10px 0 0;
         background-color: hsla(226, 71%, 40%, 0.377);
-        border-color: hsl(226, 71%, 40%);
     }.btn_tab_active0{
         border-radius: 10px 10px 0 0;
         background-color: hsla(226, 71%, 40%, 0.116);
         border-color: hsl(226, 71%, 40%);
     }
-    /*Mobile view patient details*/
-    .mobile_view{
-        display: grid;
-    }
 
-    /*Patient List text*/
-    .patient_information_1{
-        overflow-wrap: break-word;
-        font-weight: 700;
-        font-size: 1.125rem;
-        color: hsl(0 0% 5%);
-    }
-
-    .patient_information_2{
-        display: grid;
-        text-align: right;
-        align-items: center;
-    }
-
-    .patient_information_3,
-    .patient_information_4,
-    .patient_information_5,
-    .patient_information_6,
-    .patient_information_7,
-    .patient_information_8,
-    .patient_information_9{
-        color: hsl(0 0% 30%);
-    }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 3000px){
@@ -152,6 +114,8 @@ main{
     
 }
 
-@media only screen and (max-width: 1024px) {
-    
+@media only screen and (max-width: 335px) {
+    .btn_tab_active1 p{
+        font-size: 0.875rem;
+    }
 }
