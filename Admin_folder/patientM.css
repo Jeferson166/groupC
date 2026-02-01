@@ -124,8 +124,11 @@ main{
 
     .patient_information_2{
         display: grid;
-        text-align: right;
+        text-align: center;
         align-items: center;
+        font-weight: 600;
+        background-color: rgba(87, 219, 11, 0.452);
+        border-radius: 500px;
     }
 
     .patient_information_3,

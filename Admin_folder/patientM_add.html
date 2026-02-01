@@ -153,7 +153,7 @@
                         <!--Personal details-->
                         <div>
                             <p>Patient ID</p>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" placeholder="Click me!" value="" id="patient_id">
                         </div>
                         <div>
                             <p>First Name</p>
@@ -169,11 +169,11 @@
                         </div>
                         <div>
                             <p>Date of Birth</p>
-                            <input type="text" name="" id="">
+                            <input type="date" name="" id="">
                         </div>
                         <div>
                             <p>Age</p>
-                            <input type="text" name="" id="">
+                            <input type="number" name="" id="">
                         </div>
                         <div>
                             <p>Civil Status</p>
@@ -185,11 +185,11 @@
                         </div>
                         <div>
                             <p>Contact Number</p>
-                            <input type="text" name="" id="">
+                            <input type="number"">
                         </div>
                         <div>
                             <p>Email</p>
-                            <input type="text" name="" id="">
+                            <input type="email" name="" id="">
                         </div>
                     </div>
                     <p class="title">Personal Details</p>
@@ -212,24 +212,27 @@
                             <input type="text" name="" id="">
                         </div>
                         <div>
-                            <p>Height</p>
-                            <input type="text" name="" id="">
+                            <p>Height (ft)</p>
+                            <input type="number" name="" id="">
                         </div>
                         <div>
-                            <p>Weight</p>
-                            <input type="text" name="" id="">
+                            <p>Weight (kg)</p>
+                            <input type="number" name="" id="">
                         </div>
                     </div>
                     <div class="buttons">
-                        <input class="submit" type="submit" value="Submit">
+                        <input class="submit" id="submit" type="submit" value="Submit">
                     </div>
                     <div class="buttons">
-                        <input class="cancel" type="submit" value="Cancel">
+                        <a href="patientM.html">
+                            <input class="cancel" type="submit" value="Cancel">
+                        </a>
                     </div>
 
                 </div>
             </div>
         </main>
+    <script src="/groupC/Admin_folder/patientM_add.js"></script>
     <script src="/groupC/Admin_folder/sidepanel.js"></script>
     </body>
 
