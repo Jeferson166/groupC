@@ -207,7 +207,7 @@ main li{
         display: flex !important;
         flex-wrap: wrap;
         min-height: 100vh;
-        width: 100vw;
+        /* width: 100vw; */
     }
     aside{
         position: -webkit-sticky; /* Safari */
