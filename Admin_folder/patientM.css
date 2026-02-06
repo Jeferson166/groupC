@@ -143,6 +143,7 @@ main{
         text-align: center;
         align-items: center;
         font-weight: 600;
+        font-size: 0.8rem;
         background-color: rgba(87, 219, 11, 0.452);
         border-radius: 500px;
     }
@@ -164,6 +165,12 @@ main{
         display: none;
         visibility: hidden;
         pointer-events: none;
+    }
+    .health_record_tab{
+        color: hsl(226, 71%, 40%);
+    }
+    .health_record_tab:hover{
+        text-decoration: underline;
     }
 
     /*Desktop view layout*/
