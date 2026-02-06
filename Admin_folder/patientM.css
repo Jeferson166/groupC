@@ -71,7 +71,7 @@ main{
 .patient_card{
     display: grid;
     background-color: hsla(222, 43%, 91%, 0.507);
-    grid-template-columns: 50% 20%;
+    grid-template-columns: 1fr 0.4fr;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: 
     "patient_information_1 patient_information_2"
@@ -135,16 +135,18 @@ main{
         overflow-wrap: break-word;
         font-weight: 700;
         font-size: 1.125rem;
-        color: hsl(0 0% 5%);
+        color: hsl(226, 71%, 40%) !important;
+        text-decoration:underline;
     }
 
     .patient_information_2{
         display: grid;
         text-align: center;
         align-items: center;
+        justify-content: center;
         font-weight: 600;
-        font-size: 0.8rem;
-        background-color: rgba(87, 219, 11, 0.452);
+        font-size: 1rem;
+        color: hsl(98.3, 89.2%, 25.5%);
         border-radius: 500px;
     }
 
@@ -167,10 +169,23 @@ main{
         pointer-events: none;
     }
     .health_record_tab{
-        color: hsl(226, 71%, 40%);
+        color: hsl(226, 71%, 40%) !important;
+        text-decoration: none;
     }
     .health_record_tab:hover{
         text-decoration: underline;
+    }
+
+    .add_patient{
+        display: flex;
+        gap: 5px;
+        font-weight: 550;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px;
+        border-radius: 25px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(226, 71%, 40%);
     }
 
     /*Desktop view layout*/
@@ -182,7 +197,7 @@ main{
     .content_tabs{
         display: grid;
         width: 100%;
-        grid-template-columns: 15% 25% 50%;
+        grid-template-columns: 15% 80%;
         grid-template-rows: 1fr;
         border: solid hsla(0, 0%, 39%, 0.726);
         border-width: 0px 0px 1px 0px;
@@ -218,7 +233,7 @@ main{
 
     thead tr{
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr) repeat(2, 0.5fr) repeat(3, 1fr);
     }
     tbody{
         min-height: 500px;
@@ -228,7 +243,7 @@ main{
     tbody tr{
         padding: 10px 0px;
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr) repeat(2, 0.5fr) repeat(3, 1fr);
         text-align: center;
         align-items: center;
     }tbody tr:nth-child(even){
