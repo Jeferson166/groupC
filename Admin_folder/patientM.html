@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="appointment.html">
                         <span class="material-symbols-outlined side_panel_active" data-mode="active"">
                             calendar_clock
                         </span>
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="facilities.html">
                         <span class="material-symbols-outlined side_panel_active" data-mode="active"">
                             hotel
                         </span>
@@ -108,6 +108,7 @@
         </div>
         <div class="main_container">
             <div class="main_container_bg main_container content_container content_container_bg">
+                <!--Mobile view patient list-->
                 <div class="content_row mobile_content_row">
                     <div class="btn_tab_active1 content_container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -158,15 +159,16 @@
                 </div>
                 <div class="content_row mobile_content_row">
                     <div class="search_container">
-                        <input type="search" class="search_bar" placeholder="Search Patients" id="">
+                        <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
                     </div>
                 </div>
                 <!--Mobile view patient list-->
                 <div class="content_row mobile_content_row">
                     <div class="cards_container">
                         <div class="patient_card">
-                            <p class="patient_information_1" style="grid-area: patient_information_1"><a href="" class="patient_information_1">Jeferson R.
-                            Deocampo</a></p>
+                            <p class="patient_information_1" style="grid-area: patient_information_1"><a href=""
+                                    class="patient_information_1">Jeferson R.
+                                    Deocampo</a></p>
                             <p class="patient_information_2" style="grid-area: patient_information_2">Active</p>
                             <p class="patient_information_3" style="grid-area: patient_information_3">#123456789</p>
                             <div class="patient_information_4" style="grid-area: patient_information_4">
@@ -187,8 +189,9 @@
                             </div>
                         </div>
                         <div class="patient_card">
-                            <p class="patient_information_1" style="grid-area: patient_information_1"><a href="" class="patient_information_1">Jeferson R.
-                            Deocampo</a></p>
+                            <p class="patient_information_1" style="grid-area: patient_information_1"><a href=""
+                                    class="patient_information_1">Jeferson R.
+                                    Deocampo</a></p>
                             <p class="patient_information_2" style="grid-area: patient_information_2">Active</p>
                             <p class="patient_information_3" style="grid-area: patient_information_3">#123456789</p>
                             <div class="patient_information_4" style="grid-area: patient_information_4">
@@ -209,8 +212,9 @@
                             </div>
                         </div>
                         <div class="patient_card">
-                            <p class="patient_information_1" style="grid-area: patient_information_1"><a href="" class="patient_information_1">Jeferson R.
-                            Deocampo</a></p>
+                            <p class="patient_information_1" style="grid-area: patient_information_1"><a href=""
+                                    class="patient_information_1">Jeferson R.
+                                    Deocampo</a></p>
                             <p class="patient_information_2" style="grid-area: patient_information_2">Active</p>
                             <p class="patient_information_3" style="grid-area: patient_information_3">#123456789</p>
                             <div class="patient_information_4" style="grid-area: patient_information_4">
@@ -238,16 +242,18 @@
                 <div class="desktop_content_row">
                     <div class="content_tabs">
                         <div class="btn_tab_active1 content_container tab_1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                            </svg>
-                            <p class="btn_actv1">Patient List</p>
+                            <div class="patient_list">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                                <p class="btn_actv1">Patient List</p>
+                            </div>
                         </div>
                         <a href="patientM_HeRe.html" style="display: none; visibility: hidden; pointer-events: none;">
                             <div class="btn_tab_active1 content_container tab_2">
@@ -269,11 +275,12 @@
                                 <p class="btn_actv1">Patients Health Record</p>
                             </div>
                         </a>
-                        <a href="patientM_add.html">
-                            <div class="btn_tab_active1 content_container tab_3">
+                        <div class="btn_tab_active1 content_container tab_3">
+                            <a href="patientM_add.html">
                                 <div class="add_patient">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
                                         class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
@@ -283,13 +290,13 @@
                                     </svg>
                                     <p>Add Patient</p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div><!--End of content_tabs-->
 
                     <div class="desktop_content_row">
                         <div class="search_container">
-                            <input type="search" class="search_bar" placeholder="Search Patients" id="">
+                            <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
                         </div>
                     </div>
 

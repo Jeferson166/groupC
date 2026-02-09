@@ -129,7 +129,7 @@ main{
         display: grid;
     }
 
-    /*Patient List text*/
+    /*Mobile view Patient List text*/
     .patient_information_1{
         overflow-wrap: break-word;
         font-weight: 700;
@@ -190,6 +190,16 @@ main{
         background-color: hsl(226deg 71% 40% / 38%);
         transition: 1s;
     }
+    .patient_list{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+        border: solid hsl(226, 71%, 40%);
+        margin-bottom: -3px;
+        border-width: 0px 0px 2px 0px;
+        padding-bottom: 10px;
+    }
 
     /*Desktop view layout*/
     .desktop_content_row{
@@ -200,17 +210,14 @@ main{
     .content_tabs{
         display: grid;
         width: 100%;
-        grid-template-columns: 15% 80%;
+        grid-template-columns: 25% 70%;
         grid-template-rows: 1fr;
+        align-items: end;
         border: solid hsla(0, 0%, 39%, 0.726);
         border-width: 0px 0px 1px 0px;
     }
 
-    /*tab_1, 2, 3 is for Patient list, Health record, Add Patient*/
-    .tab_1{
-        border: solid hsl(226, 71%, 40%);
-        border-width: 0px 0px 2px 0px;
-    }
+    /*tab_1, 2, 3 is for Desktop view Patient list, Health record, Add Patient*/
     .tab_3{
         justify-content: end;
     }
@@ -224,7 +231,7 @@ main{
         padding: 0 0 5px 0;
     }
 
-    /*Table section*/
+    /*Desktop view Table section*/
     table{
         margin-top: 40px;
         display: grid;
@@ -239,8 +246,7 @@ main{
         grid-template-columns: repeat(2, 1fr) repeat(2, 0.5fr) repeat(3, 1fr);
     }
     tbody{
-        min-height: 500px;
-        max-height: 510px;
+        max-height: 768px;
         overflow-y: scroll;
     }
     tbody tr{
@@ -259,6 +265,15 @@ main{
 @media only screen and (min-width: 953px) and (max-width: 2628px){
     
 }
+@media only screen and (min-width: 768px) and (max-width: 880px){
+    thead tr{
+        font-size: 0.9rem;
+    }
+    tbody tr{
+        font-size: 0.8rem;
+    }
+}
+
 @media only screen and (min-width: 1341px) and (max-width: 2628px){
     
 }

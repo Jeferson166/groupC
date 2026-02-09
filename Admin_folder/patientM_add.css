@@ -110,7 +110,7 @@ main {
     border-color: hsl(226, 71%, 40%);
   }
 
-  /*Buttons layout*/
+  /*Mobile Buttons layout*/
   .mobile_buttons_containers {
     margin-top: 40px;
     display: grid;
@@ -124,7 +124,7 @@ main {
     padding: 7px;
   }
 
-  /*Form layout*/
+  /*Mobile Form layout*/
   .form {
     display: flex;
     flex-wrap: nowrap;
@@ -146,7 +146,7 @@ main {
     display: grid;
   }
 
-  /*Hide Desktop view*/
+  /*Mobile view Hide*/
   .content_tabs,
   .desktop_buttons_containers {
     display: none;
@@ -196,7 +196,18 @@ main {
     pointer-events: none;
   }
 
-  /*Buttons layout*/
+  .patient_list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+    border: solid hsl(226, 71%, 40%);
+    margin-bottom: -3px;
+    border-width: 0px 0px 2px 0px;
+    padding-bottom: 10px;
+  }
+
+  /*Desktop Buttons layout*/
   .desktop_buttons_containers {
     display: grid;
     grid-template-columns: 1fr 0.7fr;
@@ -209,7 +220,7 @@ main {
     padding: 10px 20px 10px 10px !important;
   }
 
-  /*Form layout*/
+  /*Desktop Form layout*/
   .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -238,20 +249,17 @@ main {
     width: 100%;
   }
   .content_tabs {
+    margin: 10px 0 0 0;
     display: grid;
     width: 100%;
     align-items: end;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 25% 70%;
     grid-template-rows: 1fr;
     border: solid hsla(0, 0%, 39%, 0.726);
     border-width: 0px 0px 1px 0px;
   }
 
-  /*tab_1, 2, 3 is for Patient list, Health record, Add Patient*/
-  .tab_1 {
-    border: solid hsl(226, 71%, 40%);
-    border-width: 0px 0px 2px 0px;
-  }
+  /*tab_1, 2, 3 is for Desktop Patient list, Health record, Add Patient*/
   .tab_3 {
     justify-content: end;
   }
@@ -265,7 +273,7 @@ main {
     padding: 0 0 5px 0;
   }
 
-  /*Mobile views hide*/
+  /*Desktop views hide*/
   .content_row,
   .mobile_buttons_containers {
     visibility: hidden;
