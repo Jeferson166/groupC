@@ -1,82 +1,129 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/groupC/Admin_folder/sharedStyle.css">
+    <link rel="stylesheet" href="/groupC/Patient_folder/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
 
-<html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
+    <body>
+        <aside class="content_container side_panel_expanded" data-mode="active">
+            <nav>
+                <div class="side_panel_ctner_1">
+                    <li>
+                        <i class="hospital_logo side_panel_active" data-mode="active"></i>
 
-        <link rel="stylesheet" href="dashboard.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    </head>
-
-<body>
-
-    <nav class="topbar-center">
-        <a href="#">
-            <span class="material-symbols-outlined">event</span>
-            <span>Book Appointment</span>
-        </a>
-
-        <a href="#">
-            <span class="material-symbols-outlined">local_hospital</span>
-            <span>Check Facilities</span>
-        </a>
-    </nav>
-
-   <div class="container">
-        <div class="sidebar">
-            <ul>
-
+                    
+                        <div class="side_panel_btn_ctnair">
+                            <span class="material-symbols-outlined expand_btn" id="collapse_btn" data-mode="active">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </li>
+                </div>
+                <!--Other tabs-->
+                <div class="side_panel_ctner_1">
+                    <li>
+                        <a href="">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                dashboard
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patientM.html">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                person_heart
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Patient Management</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="appointment.html">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                calendar_clock
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Appointments & Scheduling</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                hotel
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Facilities</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                supervisor_account
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Staff management</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                notifications
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Notification</p>
+                        </a>
+                    </li>
+                </div>
+                <!--Other options-->
+                <div class="side_panel_ctner_2">
+                    <li>
+                        <a href="">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                settings
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Setting</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
+                                exit_to_app
+                            </span>
+                            <p class="side_panel_active" data-mode="active">Logout</p>
+                        </a>
+                    </li>
+                </div>
+            </nav>
+        </aside>
+        <main>
+            <div class="user_name_container">
                 <li>
-                    <a href="#" class="nav-link">
-                        <span class="item-icon">
-                            <span class="material-symbols-outlined">dashboard</span>
-                        </span>
-                        <span class="item-txt">Dashboard</span>
-                    </a>
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <p>Kurt Cabaluna</p>
                 </li>
+            </div>
 
-                <li>
-                    <a href="#" class="nav-link">
-                        <span class="item-icon">
-                            <span class="material-symbols-outlined">person</span>
-                        </span>
-                        <span class="item-txt">Profile</span>
-                    </a>
-                </li>
+            
+            <div class="main_container">
+                <p>paragraph</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                class="icon icon-tabler icons-tabler-outline icon-tabler-building-hospital">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l18 0" />
+                    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                    <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                    <path d="M10 9l4 0" />
+                    <path d="M12 7l0 4" /></svg>
+            </div>
 
-                <li>
-                    <a href="#" class="nav-link">
-                        <span class="item-icon">
-                            <span class="material-symbols-outlined">event</span>
-                        </span>
-                        <span class="item-txt">Appointment</span>
-                    </a>
-                </li>
+        </main>
+    <script src="/groupC/Admin_folder/sidepanel.js"></script>
+    </body>
 
-                <li>
-                    <a href="#" class="nav-link">
-                        <span class="item-icon">
-                            <span class="material-symbols-outlined">local_hospital</span>
-                        </span>
-                        <span class="item-txt">Facilities</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        <span class="item-icon">
-                            <span class="material-symbols-outlined">home</span>
-                        </span>
-                        <span class="item-txt">Home</span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</body>
 </html>
                      
