@@ -11,13 +11,13 @@
 
 
     <body>
+        <!--SIDE CONTAINER (button slide)-->
         <aside class="content_container side_panel_expanded" data-mode="active">
             <nav>
-                <div class="side_panel_ctner_1">
+                <div class="side-container">
                     <li>
                         <i class="hospital_logo side_panel_active" data-mode="active"></i>
 
-                    
                         <div class="side_panel_btn_ctnair">
                             <span class="material-symbols-outlined expand_btn" id="collapse_btn" data-mode="active">
                                 arrow_forward_ios
@@ -25,58 +25,43 @@
                         </div>
                     </li>
                 </div>
-                <!--Other tabs-->
-                <div class="side_panel_ctner_1">
+           
+                <!--SIDE CONTAINER-->
+                <div class="side-container">
                     <li>
-                        <a href="">
-                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
-                                dashboard
-                            </span>
+                        <a href="dashboard.html">
+                            <span class="material-symbols-outlined side_panel_active">dashboard</span>
                             <p class="side_panel_active" data-mode="active">Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="patientM.html">
-                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
-                                person_heart
-                            </span>
-                            <p class="side_panel_active" data-mode="active">Patient Management</p>
+                        <a href="patient.html">
+                            <span class="material-symbols-outlined">person</span>
+                            <p class="side_panel_active" data-mode="active">Profile</p>
                         </a>
                     </li>
                     <li>
                         <a href="appointment.html">
-                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
-                                calendar_clock
-                            </span>
-                            <p class="side_panel_active" data-mode="active">Appointments & Scheduling</p>
+                            <span class="material-symbols-outlined side_panel_active">calendar_clock</span>
+                            <p class="side_panel_active" data-mode="active">Appointments</p>
                         </a>
                     </li>
                     <li>
                         <a href="facilities.html">
-                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
-                                hotel
-                            </span>
+                            <span class="material-symbols-outlined side_panel_active">hotel</span>
                             <p class="side_panel_active" data-mode="active">Facilities</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
-                                supervisor_account
-                            </span>
-                            <p class="side_panel_active" data-mode="active">Staff management</p>
+                            <span class="material-symbols-outlined">home</span>
+                            <p class="side_panel_active" data-mode="active">Home</p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <span class="material-symbols-outlined side_panel_active" data-mode="active">
-                                notifications
-                            </span>
-                            <p class="side_panel_active" data-mode="active">Notification</p>
-                        </a>
-                    </li>
                 </div>
-                <!--Other options-->
+             
+                <!--SIDE CONTAINER 2-->
                 <div class="side_panel_ctner_2">
                     <li>
                         <a href="">
@@ -97,7 +82,8 @@
                 </div>
             </nav>
         </aside>
-        <main>
+
+        <main><!--TOP NAVIGATOR-->
             <div class="user_name_container">
                 <li>
                     <span class="material-symbols-outlined">
@@ -107,23 +93,59 @@
                 </li>
             </div>
 
-            
+
             <div class="main_container">
-                <p>paragraph</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                class="icon icon-tabler icons-tabler-outline icon-tabler-building-hospital">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 21l18 0" />
-                    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
-                    <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                    <path d="M10 9l4 0" />
-                    <path d="M12 7l0 4" /></svg>
+
+            <div class="facility-box">
+
+                <div class="facility-overview">
+
+                    <div class="facility-icon">
+                        <span class="material-symbols-outlined">health_and_safety</span>
+                    </div>
+                        <h2>Facility Overview</h2>
+                    </div>
+
+                <div class="facility-table">
+
+                    <div class="facility-row facility-head">
+                        <div>Facility</div>
+                        <div>Doctors today</div>
+                        <div>Patients Scheduled</div>
+                        <div>Status</div>
+                    </div>
+
+                    <div class="facility-row">
+                        <div>Barangay San Juan Health Center</div>
+                        <div>3</div>
+                        <div>3</div>
+                        <div><span class="status open">OPEN</span></div>
+                    </div>
+
+                    <div class="facility-row">
+                        <div>Barangay Sta Ana Health Center</div>
+                        <div>2</div>
+                        <div>1</div>
+                        <div><span class="status open">OPEN</span></div>
+                    </div>
+
+                    <div class="facility-row">
+                        <div>Barangay San Isidro Health Center</div>
+                        <div>2</div>
+                        <div>1</div>
+                        <div><span class="status open">OPEN</span></div>
+                    </div>
+
+                </div>
             </div>
+        </div>
+
 
         </main>
     <script src="/groupC/Admin_folder/sidepanel.js"></script>
     </body>
 
 </html>
+
+
                      

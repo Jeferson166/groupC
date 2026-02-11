@@ -1,10 +1,86 @@
-.side_panel_active {
-color:#240BB3 !important;
+.side-container li {
+    list-style: none;  
 }
 
-.main_container {
-color:#61c5c5;
+.side-container li a {
+    color:#240BB3;
+    display: flex;              
+    align-items: center;      
+    text-decoration: none;     
+    padding: 10px 15px;        
 }
 
+/*FACILITY OVERVIEW */
+.facility-box {
+    background: #f5f6f8;
+    padding: 25px 30px;
+    border-radius: 5px;
+    width: 750px;
+    font-family: 'Segoe UI', sans-serif;
+}
 
+/* HEADER */
+.facility-overview {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
 
+.facility-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ICON */
+.facility-icon {
+    background: #240BB3;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facility-icon span {
+    font-size: 28px;
+}
+
+/* TABLE LAYOUT */
+.facility-table {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ROW LAYOUT */
+.facility-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.facility-head {
+    font-weight: 600;
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+/* STATUS BADGE */
+.status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+
+.status.open {
+    background: #61c454;
+    color: white;
+}
