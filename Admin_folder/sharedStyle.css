@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --header_fixed_height: 56px; /*The user_name*/
+}
+
 html{
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -153,7 +157,7 @@ main li{
 .user_name_container{
     display: flex;
     justify-content: flex-end;
-    height: fit-content;
+    height: var(--header_fixed_height);
     padding: 1rem;
     width: 100%;
     background-color: hsl(0, 0%, 95%);
@@ -165,6 +169,10 @@ main li{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+main{
+    flex: 1;
 }
 
 /*Icons setting*/
@@ -188,6 +196,8 @@ main li{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 425px){
+    /*Mobile view*/
+    /*Side bar layout*/
     aside{
         position: fixed !important;
         height: 100vh !important;
@@ -203,12 +213,14 @@ main li{
 }
 
 @media only screen and (min-width: 426px) and (max-width: 2560px){
+    /*Desktop view*/
     body{
         display: flex !important;
         flex-wrap: wrap;
         min-height: 100vh;
         /* width: 100vw; */
     }
+    /*Side bar layout*/
     aside{
         position: -webkit-sticky; /* Safari */
         position: sticky;
@@ -216,7 +228,7 @@ main li{
         align-self: flex-start;
         height: 100vh;
         overflow-y: auto;
-        width: 20%;
+        width: var(--fixed_width_for_sb);
         z-index: 50;
     }
     aside nav{
@@ -243,7 +255,7 @@ main li{
         overflow-x: hidden;
     }
     main{
-        flex: 1;
+        width: calc(100dvh - var(--fixed_width_for_sb));
     }
     .expand_btn{
         visibility: hidden !important;
