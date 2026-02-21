@@ -98,588 +98,849 @@
         </nav>
     </aside>
     <main>
-        <div class="user_name_container">
+        <header class="user_name_container">
             <li>
                 <span class="material-symbols-outlined">
                     account_circle
                 </span>
                 <p>Jeferson R.D.</p>
             </li>
-        </div>
-        <div class="main_container">
-            <div class="main_container_bg main_container content_container content_container_bg">
-                <!--Mobile view-->
-                <!--Mobile view main content navigation-->
-                <div class="content_row mobile_content_row">
-                    <div class="btn_tab_active1 content_container">
+        </header>
+        <!--Mobile view-->
+        <!--Mobile view main content navigation-->
+        <section class="mobile_version">
+            <div class="content_row mobile_content_row">
+                <div class="btn_tab_active1 content_container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                    </svg>
+                    <p class="btn_actv1">Appointment and Scheduling</p>
+                </div>
+                <a href="">
+                    <div class="btn_tab_active0 content_container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M16 19h6" />
+                            <path d="M19 16v6" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
                         </svg>
-                        <p class="btn_actv1">Appointment and Scheduling</p>
+                        <p class="btn_actv0">Add Appointment</p>
                     </div>
-                    <a href="patientM_HeRe.html" style="display: none; visibility: hidden; pointer-events: none;">
-                        <div class="btn_tab_active0 content_container">
+                </a>
+            </div><!--End of Mobile view main content navigation-->
+            <!--Mobile view search box-->
+            <div class="content_row mobile_content_row">
+                <div class="search_container">
+                    <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
+                </div>
+            </div><!--End of Mobile view search box-->
+            <!--Mobile view patient list-->
+            <div class="content_row mobile_content_row">
+                <div class="cards_container">
+                    <div class="patient_card">
+                        <div>
+                            <p>Name:</p>
+                            <p>Deocampo, Jeferson R.</p>
+                        </div>
+                        <div>
+                            <p>View / Delete</p>
+                        </div>
+                        <div>
+                            <p>123456789</p>
+                        </div>
+                        <div>
+                            <p>Confirmed</p>
+                        </div>
+                        <div>
+                            <p>03/02/25:</p>
+                            <p>3:30 P.M.</p>
+                        </div>
+                        <div>
+                            <p>Doctor name:</p>
+                            <p>abc, asdasd, a</p>
+                        </div>
+                        <div>
+                            <p>Department:</p>
+                            <p>General Clinic</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--End of Mobile view patient list-->
+            <!---End of Mobile view-->
+        </section>
+
+        <!--Desktop view-->
+        <!--Desktop view main content navigation-->
+        <!--Problem is the table, tablet mode-->
+        <section class="desktop_version">
+            <!--Desktop view patient list-->
+            <div class="desktop_content_row">
+                <div class="content_tabs">
+                    <div class="btn_tab_active1 content_container tab_1">
+                        <div class="appointment">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-folder-cog">
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M12.5 19h-7.5a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3" />
-                                <path d="M17.001 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                <path d="M19.001 15.5v1.5" />
-                                <path d="M19.001 21v1.5" />
-                                <path d="M22.032 17.25l-1.299 .75" />
-                                <path d="M17.27 20l-1.3 .75" />
-                                <path d="M15.97 17.25l1.3 .75" />
-                                <path d="M20.733 20l1.3 .75" />
+                                <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
                             </svg>
-                            <p class="btn_actv0">Patients Health Record</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="btn_tab_active0 content_container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                                <path d="M16 19h6" />
-                                <path d="M19 16v6" />
-                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
-                            </svg>
-                            <p class="btn_actv0">Add Appointment</p>
-                        </div>
-                    </a>
-                </div><!--End of Mobile view main content navigation-->
-                <!--Mobile view search box-->
-                <div class="content_row mobile_content_row">
-                    <div class="search_container">
-                        <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
-                    </div>
-                </div><!--End of Mobile view search box-->
-                <!--Mobile view patient list-->
-                <div class="content_row mobile_content_row">
-                    <div class="cards_container">
-                        <div class="patient_card">
-                            <div>
-                                <p>Name:</p>
-                                <p>Deocampo, Jeferson R.</p>
-                            </div>
-                            <div>
-                                <p>View / Delete</p>
-                            </div>
-                            <div>
-                                <p>123456789</p>
-                            </div>
-                            <div>
-                                <p>Confirmed</p>
-                            </div>
-                            <div>
-                                <p>03/02/25:</p>
-                                <p>3:30 P.M.</p>
-                            </div>
-                            <div>
-                                <p>Doctor name:</p>
-                                <p>abc, asdasd, a</p>
-                            </div>
-                            <div>
-                                <p>Department:</p>
-                                <p>General Clinic</p>
-                            </div>
-
+                            <p class="btn_actv1">Appointment and Scheduling</p>
                         </div>
                     </div>
-                </div><!--End of Mobile view patient list-->
-                <!---End of Mobile view-->
-
-                <!--Desktop view patient list-->
-                <div class="desktop_content_row">
-                    <div class="content_tabs">
-                        <div class="btn_tab_active1 content_container tab_1">
-                            <div class="appointment">
+                    <div class="btn_tab_active1 content_container tab_3">
+                        <a href="">
+                            <div class="add_appointment">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
                                 </svg>
-                                <p class="btn_actv1">Appointment and Scheduling</p>
-                            </div>
-                        </div>
-                        <a href="patientM_HeRe.html" style="display: none; visibility: hidden; pointer-events: none;">
-                            <div class="btn_tab_active1 content_container tab_2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-folder-cog">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12.5 19h-7.5a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3" />
-                                    <path d="M17.001 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                    <path d="M19.001 15.5v1.5" />
-                                    <path d="M19.001 21v1.5" />
-                                    <path d="M22.032 17.25l-1.299 .75" />
-                                    <path d="M17.27 20l-1.3 .75" />
-                                    <path d="M15.97 17.25l1.3 .75" />
-                                    <path d="M20.733 20l1.3 .75" />
-                                </svg>
-                                <p class="btn_actv1">Patients Health Record</p>
+                                <p>Add Appointment</p>
                             </div>
                         </a>
-                        <div class="btn_tab_active1 content_container tab_3">
-                            <a href="patientM_add.html">
-                                <div class="add_appointment">
+                    </div>
+                </div><!--End of content_tabs, Desktop view-->
+
+                <div class="search_container">
+                    <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
+                </div>
+                
+                <!--Table-->
+                <div class="patient_info">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="grid-area: header1;">Appointment ID</th>
+                                <th style="grid-area: header2;">Patient Name</th>
+                                <th style="grid-area: header3;">Gender</th>
+                                <th style="grid-area: header4;">Date</th>
+                                <th style="grid-area: header5;">Time</th>
+                                <th style="grid-area: header6;">Doctor</th>
+                                <th style="grid-area: header7;">Department</th>
+                                <th style="grid-area: header8; padding-right: 15px;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>APT-0001</td>
+                                <td>Deocampo, Jeferson R.</td>
+                                <td>Male</td>
+                                <td>2026-02-10</td>
+                                <td>09:00 AM</td>
+                                <td>Dr. Maria Santos</td>
+                                <td>General Clinic</td>
+                                <td class="status_table">
+                                    Scheduled
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                                        <path d="M16 19h6" />
-                                        <path d="M19 16v6" />
-                                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
                                     </svg>
-                                    <p>Add Appointment</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div><!--End of content_tabs, Desktop view-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0002</td>
+                                <td>Santos, Maria L.</td>
+                                <td>Female</td>
+                                <td>2026-02-10</td>
+                                <td>10:30 AM</td>
+                                <td>Dr. John Cruz</td>
+                                <td>Pediatrics</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0003</td>
+                                <td>Cruz, John Michael A.</td>
+                                <td>Male</td>
+                                <td>2026-02-11</td>
+                                <td>01:00 PM</td>
+                                <td>Dr. Angela Reyes</td>
+                                <td>Internal Medicine</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0004</td>
+                                <td>Reyes, Angela P.</td>
+                                <td>Female</td>
+                                <td>2026-02-11</td>
+                                <td>03:15 PM</td>
+                                <td>Dr. Kevin Dela Cruz</td>
+                                <td>Dermatology</td>
+                                <td class="status_table">
+                                    Cancelled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0005</td>
+                                <td>Garcia, Nicole S.</td>
+                                <td>Female</td>
+                                <td>2026-02-12</td>
+                                <td>08:45 AM</td>
+                                <td>Dr. Brian Alvarez</td>
+                                <td>OB-GYN</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0006</td>
+                                <td>Lopez, Christian M.</td>
+                                <td>Male</td>
+                                <td>2026-02-12</td>
+                                <td>10:00 AM</td>
+                                <td>Dr. Hannah Ramos</td>
+                                <td>Cardiology</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0007</td>
+                                <td>Torres, Alyssa K.</td>
+                                <td>Female</td>
+                                <td>2026-02-12</td>
+                                <td>11:30 AM</td>
+                                <td>Dr. Joshua Villanueva</td>
+                                <td>Neurology</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0008</td>
+                                <td>Flores, Daniel J.</td>
+                                <td>Male</td>
+                                <td>2026-02-13</td>
+                                <td>01:00 PM</td>
+                                <td>Dr. Bea Castillo</td>
+                                <td>ENT</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0009</td>
+                                <td>Mendoza, Rhea T.</td>
+                                <td>Female</td>
+                                <td>2026-02-13</td>
+                                <td>02:30 PM</td>
+                                <td>Dr. Luis Ortega</td>
+                                <td>Orthopedics</td>
+                                <td class="status_table">
+                                    Cancelled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0010</td>
+                                <td>Navarro, Paul E.</td>
+                                <td>Male</td>
+                                <td>2026-02-13</td>
+                                <td>04:00 PM</td>
+                                <td>Dr. Kim Perez</td>
+                                <td>General Clinic</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
 
-                    <div class="desktop_content_row">
-                        <div class="search_container">
-                            <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
-                        </div>
-                    </div>
-                    <!--Desktop view-->
-                    <div class="patient_list">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Appointment ID</th>
-                                    <th>Patient Name</th>
-                                    <th>Gender</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Doctor</th>
-                                    <th>Department</th>
-                                    <th>Status</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>APT-0001</td>
-                                    <td>Deocampo, Jeferson R.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-10</td>
-                                    <td>09:00 AM</td>
-                                    <td>Dr. Maria Santos</td>
-                                    <td>General Clinic</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0002</td>
-                                    <td>Santos, Maria L.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-10</td>
-                                    <td>10:30 AM</td>
-                                    <td>Dr. John Cruz</td>
-                                    <td>Pediatrics</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0003</td>
-                                    <td>Cruz, John Michael A.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-11</td>
-                                    <td>01:00 PM</td>
-                                    <td>Dr. Angela Reyes</td>
-                                    <td>Internal Medicine</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0004</td>
-                                    <td>Reyes, Angela P.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-11</td>
-                                    <td>03:15 PM</td>
-                                    <td>Dr. Kevin Dela Cruz</td>
-                                    <td>Dermatology</td>
-                                    <td>Cancelled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0005</td>
-                                    <td>Garcia, Nicole S.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-12</td>
-                                    <td>08:45 AM</td>
-                                    <td>Dr. Brian Alvarez</td>
-                                    <td>OB-GYN</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0006</td>
-                                    <td>Lopez, Christian M.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-12</td>
-                                    <td>10:00 AM</td>
-                                    <td>Dr. Hannah Ramos</td>
-                                    <td>Cardiology</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0007</td>
-                                    <td>Torres, Alyssa K.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-12</td>
-                                    <td>11:30 AM</td>
-                                    <td>Dr. Joshua Villanueva</td>
-                                    <td>Neurology</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0008</td>
-                                    <td>Flores, Daniel J.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-13</td>
-                                    <td>01:00 PM</td>
-                                    <td>Dr. Bea Castillo</td>
-                                    <td>ENT</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0009</td>
-                                    <td>Mendoza, Rhea T.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-13</td>
-                                    <td>02:30 PM</td>
-                                    <td>Dr. Luis Ortega</td>
-                                    <td>Orthopedics</td>
-                                    <td>Cancelled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0010</td>
-                                    <td>Navarro, Paul E.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-13</td>
-                                    <td>04:00 PM</td>
-                                    <td>Dr. Kim Perez</td>
-                                    <td>General Clinic</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>APT-0011</td>
+                                <td>Ramos, Hannah C.</td>
+                                <td>Female</td>
+                                <td>2026-02-14</td>
+                                <td>09:15 AM</td>
+                                <td>Dr. Brian Alvarez</td>
+                                <td>Internal Medicine</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0012</td>
+                                <td>Villanueva, Joshua B.</td>
+                                <td>Male</td>
+                                <td>2026-02-14</td>
+                                <td>10:45 AM</td>
+                                <td>Dr. Faith Morales</td>
+                                <td>Pediatrics</td>
+                                <td class="status_table">
+                                    No Show
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0013</td>
+                                <td>Castillo, Bea M.</td>
+                                <td>Female</td>
+                                <td>2026-02-14</td>
+                                <td>01:30 PM</td>
+                                <td>Dr. Carlo Jimenez</td>
+                                <td>Dermatology</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0014</td>
+                                <td>Ortega, Luis P.</td>
+                                <td>Male</td>
+                                <td>2026-02-14</td>
+                                <td>03:00 PM</td>
+                                <td>Dr. Denise Silva</td>
+                                <td>Cardiology</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0015</td>
+                                <td>Perez, Kim L.</td>
+                                <td>Female</td>
+                                <td>2026-02-15</td>
+                                <td>08:30 AM</td>
+                                <td>Dr. Eric Tan</td>
+                                <td>OB-GYN</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
 
-                                <tr>
-                                    <td>APT-0011</td>
-                                    <td>Ramos, Hannah C.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-14</td>
-                                    <td>09:15 AM</td>
-                                    <td>Dr. Brian Alvarez</td>
-                                    <td>Internal Medicine</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0012</td>
-                                    <td>Villanueva, Joshua B.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-14</td>
-                                    <td>10:45 AM</td>
-                                    <td>Dr. Faith Morales</td>
-                                    <td>Pediatrics</td>
-                                    <td>No Show</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0013</td>
-                                    <td>Castillo, Bea M.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-14</td>
-                                    <td>01:30 PM</td>
-                                    <td>Dr. Carlo Jimenez</td>
-                                    <td>Dermatology</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0014</td>
-                                    <td>Ortega, Luis P.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-14</td>
-                                    <td>03:00 PM</td>
-                                    <td>Dr. Denise Silva</td>
-                                    <td>Cardiology</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0015</td>
-                                    <td>Perez, Kim L.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-15</td>
-                                    <td>08:30 AM</td>
-                                    <td>Dr. Eric Tan</td>
-                                    <td>OB-GYN</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>APT-0016</td>
+                                <td>Alvarez, Brian D.</td>
+                                <td>Male</td>
+                                <td>2026-02-15</td>
+                                <td>10:00 AM</td>
+                                <td>Dr. Katrina Lim</td>
+                                <td>Neurology</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0017</td>
+                                <td>Morales, Faith A.</td>
+                                <td>Female</td>
+                                <td>2026-02-15</td>
+                                <td>11:45 AM</td>
+                                <td>Dr. Alfred Domingo</td>
+                                <td>General Clinic</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0018</td>
+                                <td>Jimenez, Carlo N.</td>
+                                <td>Male</td>
+                                <td>2026-02-16</td>
+                                <td>01:15 PM</td>
+                                <td>Dr. Rose Padilla</td>
+                                <td>ENT</td>
+                                <td class="status_table">
+                                    Cancelled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0019</td>
+                                <td>Silva, Denise R.</td>
+                                <td>Female</td>
+                                <td>2026-02-16</td>
+                                <td>02:45 PM</td>
+                                <td>Dr. Marco Fernandez</td>
+                                <td>Orthopedics</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0020</td>
+                                <td>Tan, Eric H.</td>
+                                <td>Male</td>
+                                <td>2026-02-16</td>
+                                <td>04:15 PM</td>
+                                <td>Dr. Joyce Salazar</td>
+                                <td>Internal Medicine</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
 
-                                <tr>
-                                    <td>APT-0016</td>
-                                    <td>Alvarez, Brian D.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-15</td>
-                                    <td>10:00 AM</td>
-                                    <td>Dr. Katrina Lim</td>
-                                    <td>Neurology</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0017</td>
-                                    <td>Morales, Faith A.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-15</td>
-                                    <td>11:45 AM</td>
-                                    <td>Dr. Alfred Domingo</td>
-                                    <td>General Clinic</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0018</td>
-                                    <td>Jimenez, Carlo N.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-16</td>
-                                    <td>01:15 PM</td>
-                                    <td>Dr. Rose Padilla</td>
-                                    <td>ENT</td>
-                                    <td>Cancelled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0019</td>
-                                    <td>Silva, Denise R.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-16</td>
-                                    <td>02:45 PM</td>
-                                    <td>Dr. Marco Fernandez</td>
-                                    <td>Orthopedics</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0020</td>
-                                    <td>Tan, Eric H.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-16</td>
-                                    <td>04:15 PM</td>
-                                    <td>Dr. Joyce Salazar</td>
-                                    <td>Internal Medicine</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>APT-0021</td>
+                                <td>Lim, Katrina Y.</td>
+                                <td>Female</td>
+                                <td>2026-02-17</td>
+                                <td>09:00 AM</td>
+                                <td>Dr. Maria Santos</td>
+                                <td>Pediatrics</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0022</td>
+                                <td>Domingo, Alfred G.</td>
+                                <td>Male</td>
+                                <td>2026-02-17</td>
+                                <td>10:30 AM</td>
+                                <td>Dr. John Cruz</td>
+                                <td>Cardiology</td>
+                                <td class="status_table">
+                                    No Show
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0023</td>
+                                <td>Padilla, Rose E.</td>
+                                <td>Female</td>
+                                <td>2026-02-17</td>
+                                <td>01:00 PM</td>
+                                <td>Dr. Angela Reyes</td>
+                                <td>Dermatology</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0024</td>
+                                <td>Fernandez, Marco V.</td>
+                                <td>Male</td>
+                                <td>2026-02-18</td>
+                                <td>02:30 PM</td>
+                                <td>Dr. Kevin Dela Cruz</td>
+                                <td>Orthopedics</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0025</td>
+                                <td>Salazar, Joyce N.</td>
+                                <td>Female</td>
+                                <td>2026-02-18</td>
+                                <td>04:00 PM</td>
+                                <td>Dr. Brian Alvarez</td>
+                                <td>General Clinic</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
 
-                                <tr>
-                                    <td>APT-0021</td>
-                                    <td>Lim, Katrina Y.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-17</td>
-                                    <td>09:00 AM</td>
-                                    <td>Dr. Maria Santos</td>
-                                    <td>Pediatrics</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0022</td>
-                                    <td>Domingo, Alfred G.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-17</td>
-                                    <td>10:30 AM</td>
-                                    <td>Dr. John Cruz</td>
-                                    <td>Cardiology</td>
-                                    <td>No Show</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0023</td>
-                                    <td>Padilla, Rose E.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-17</td>
-                                    <td>01:00 PM</td>
-                                    <td>Dr. Angela Reyes</td>
-                                    <td>Dermatology</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0024</td>
-                                    <td>Fernandez, Marco V.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-18</td>
-                                    <td>02:30 PM</td>
-                                    <td>Dr. Kevin Dela Cruz</td>
-                                    <td>Orthopedics</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0025</td>
-                                    <td>Salazar, Joyce N.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-18</td>
-                                    <td>04:00 PM</td>
-                                    <td>Dr. Brian Alvarez</td>
-                                    <td>General Clinic</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>APT-0026</td>
+                                <td>Reyes, Mark Anthony L.</td>
+                                <td>Male</td>
+                                <td>2026-02-19</td>
+                                <td>09:30 AM</td>
+                                <td>Dr. Hannah Ramos</td>
+                                <td>Internal Medicine</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0027</td>
+                                <td>Garcia, Nicole S.</td>
+                                <td>Female</td>
+                                <td>2026-02-19</td>
+                                <td>11:00 AM</td>
+                                <td>Dr. Joshua Villanueva</td>
+                                <td>Neurology</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0028</td>
+                                <td>Lopez, Andrew T.</td>
+                                <td>Male</td>
+                                <td>2026-02-19</td>
+                                <td>01:30 PM</td>
+                                <td>Dr. Bea Castillo</td>
+                                <td>ENT</td>
+                                <td class="status_table">
+                                    Cancelled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0029</td>
+                                <td>Mendoza, Carla J.</td>
+                                <td>Female</td>
+                                <td>2026-02-20</td>
+                                <td>03:00 PM</td>
+                                <td>Dr. Luis Ortega</td>
+                                <td>Orthopedics</td>
+                                <td class="status_table">
+                                    Scheduled
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT-0030</td>
+                                <td>Navarro, Paul E.</td>
+                                <td>Male</td>
+                                <td>2026-02-20</td>
+                                <td>04:30 PM</td>
+                                <td>Dr. Kim Perez</td>
+                                <td>General Clinic</td>
+                                <td class="status_table">
+                                    Completed
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="delete_icon icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </td>
+                            </tr>
 
-                                <tr>
-                                    <td>APT-0026</td>
-                                    <td>Reyes, Mark Anthony L.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-19</td>
-                                    <td>09:30 AM</td>
-                                    <td>Dr. Hannah Ramos</td>
-                                    <td>Internal Medicine</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0027</td>
-                                    <td>Garcia, Nicole S.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-19</td>
-                                    <td>11:00 AM</td>
-                                    <td>Dr. Joshua Villanueva</td>
-                                    <td>Neurology</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0028</td>
-                                    <td>Lopez, Andrew T.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-19</td>
-                                    <td>01:30 PM</td>
-                                    <td>Dr. Bea Castillo</td>
-                                    <td>ENT</td>
-                                    <td>Cancelled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0029</td>
-                                    <td>Mendoza, Carla J.</td>
-                                    <td>Female</td>
-                                    <td>2026-02-20</td>
-                                    <td>03:00 PM</td>
-                                    <td>Dr. Luis Ortega</td>
-                                    <td>Orthopedics</td>
-                                    <td>Scheduled</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>APT-0030</td>
-                                    <td>Navarro, Paul E.</td>
-                                    <td>Male</td>
-                                    <td>2026-02-20</td>
-                                    <td>04:30 PM</td>
-                                    <td>Dr. Kim Perez</td>
-                                    <td>General Clinic</td>
-                                    <td>Completed</td>
-                                    <td>
-                                        <a href="#" class="btn-delete">Delete</a>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div><!--End of Desktop view-->
+                        </tbody>
+                    </table>
+                    <!--End of Desktop view-->
                 </div>
 
             </div>
-        </div>
+        </section>
     </main>
     <script src="/groupC/Admin_folder/sidepanel.js"></script>
 </body>

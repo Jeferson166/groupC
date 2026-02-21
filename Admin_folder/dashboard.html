@@ -12,31 +12,12 @@
 <!-- if updates and changes won't work do "Ctrl+F5  or  Ctrl+Shift+R" -->
 
     <body>
+        <!--Side panel mobile, and desktop view-->
         <aside class="content_container side_panel_expanded" data-mode="active">
             <nav>
                 <div class="side_panel_ctner_1">
                     <li>
                         <i class="hospital_logo side_panel_active" data-mode="active"></i>
-<!--
-                        //DONE hide icons when collapse
-                        //DONE remove the aside bg color when collapse
-                        //DONE make this container relative and the symbol absolute
-                        //DONE make small box container for the symbol make it transparent
-                        //DONE when collapse, clickable area should be unclickable too
-                        //DONE the collapse button expand mode position is off, fix it
-
-                        //DONE in laptop, PC, Tablet view; side panel cannot be hide
-                        //DONE in laptop, PC, Tablet view; remove collapse button
-                        //DONE in laptop, PC, Tablet view; side panel should not overlap the main content
-
-                        //DONE in mobile view; for every container should take the 100%
-                        //DONE in mobile view; the main_content1_text and its icon should start in right
-                        //DONE in mobile view; Total Patients icon should not be seen
-                        //DONE in mobile view; the patients summary sub titles, should be in center
-                        //DONE in mobile view; the patients summary counts, should be extra bigggg
-                        //DONE in mobile view; make mobile view table
-
--->
                         <div class="side_panel_btn_ctnair">
                             <span class="material-symbols-outlined expand_btn" id="collapse_btn" data-mode="active">
                                 arrow_forward_ios
@@ -117,16 +98,17 @@
             </nav>
         </aside>
         <main>
-            <div class="user_name_container">
+            <header class="user_name_container">
                 <li>
                     <span class="material-symbols-outlined">
                         account_circle
                     </span>
                     <p>Jeferson R.D.</p>
                 </li>
-            </div>
-            <div class="main_container">
-<!--//Total Patient, Total Facilities, Upcoming Appointments, and Total Staff Container -->
+            </header>
+
+            <section class="main_container">
+                <!--first row-->
                 <div class="main_content_row1">
                     <div class="column">
                         <div class="content_container_bg content_right">
@@ -187,9 +169,8 @@
                         </div>
                     </div>
                 </div>
-<!--//Daily Appointments and Patients Summary Container -->
+                <!--2nd row-->
                 <div class="main_content_row2">
-<!--                //Daily Appointments Container                    -->
                     <div class="column">
                         <div class="content_container_bg content_1441">
                             <p class="title">Daily Appointments</p>
@@ -217,7 +198,6 @@
                             </div>
                         </div>
                     </div>
-<!--                //Patients Summary Container                    -->
                     <div class="column">
                         <div class="content_container_bg">
                             <div class="title">Patients Summary</div>
@@ -232,10 +212,9 @@
                         </div>
                     </div>
                 </div>
-<!--//Recent Appointments and Staff Overview Container -->
+                <!--3rd row-->
                 <div class="main_content_row2">
                     <div class="column">
-<!--                //Mobile View Table                    -->
                         <div class="content_container_bg table_mobile_view">
                             <div class="title">Recent Appointments</div>
                             <div class="mobile_V_table">
@@ -371,7 +350,6 @@
                                 </div>
                             </div>
                         </div>
-<!--                //Desktop View Table                    -->
                         <div class="content_container_bg table_desktop_view content_center">
                             <div class="title">Recent Appointments</div></table>
                             <div class="table_container">
@@ -481,7 +459,6 @@
                         </div>
                     </div>
                     <div class="column">
-<!--                //Staff Overview Container                    -->
                         <div class="content_container_bg content_center">
                             <div class="title">Staff Overview</div>
                             <div class="patient_smry">

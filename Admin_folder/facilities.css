@@ -1,6 +1,6 @@
 main{
     background-color: hsla(226, 71%, 40%, 0.048) !important;
-    min-height: 100vh;
+    min-height: 100dvh;
     align-content: baseline;
 }
 
