@@ -5,7 +5,7 @@
 
 main{
   background-color: hsla(226, 71%, 40%, 0.048) !important;
-  min-height: 100vh;
+  min-height: 100dvh;
   align-content: baseline;
 }
 
@@ -71,7 +71,7 @@ main{
     flex: 1 1 100%;
     background-color: hsl(210, 40%, 98%) !important;
     padding: 0.9375rem;
-    width: 88vw;
+    width: 88dvw;
     border-radius: 10px;
   }
   /*Main content navigation layout*/
@@ -172,7 +172,8 @@ main{
     flex: 1 1 100%;
     margin: 16px;
     padding: 0.9375rem;
-    max-height: calc(100dvh - var(--header_fixed_height) - 31px);
+    max-height: calc(100dvh - var(--header_fixed_height) - 33px);
+    overflow-y: hidden;
     border-radius: 10px;
     background-color: hsl(210, 40%, 98%) !important;
   }
@@ -211,8 +212,7 @@ main{
   .patient_info{
     margin-top: 40px;
     width: 100%;
-    min-height: 220px;
-    max-height: 510px;
+    height: 80%;
     overflow-y: scroll;
   }
 
@@ -224,10 +224,8 @@ main{
 
   thead tr,
   tbody tr{
-    padding: 10px 0px;
     text-align: center;
     align-items: center;
-    font-size: clamp(0.5rem, 1rem + 1vw, 1rem);
   }
 
   tbody tr:not(:hover) .delete_icon{
@@ -244,17 +242,16 @@ main{
     width: 50px;
   }
   tbody tr:hover:nth-child(even) .delete_icon{
-    position: absolute;
-    pointer-events: visible;
-    visibility: visible;
-    color: hsla(0, 100%, 50%, 0.747);
     background-color: hsl(210, 17%, 95%);
-    width: 50px;
   }
   .status_table{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: 10px 15px 10px 0px;
+  }
+  .delete_icon{
+    inset: auto 0 auto auto;
   }
   thead tr th,
   tbody tr td{
@@ -263,6 +260,7 @@ main{
     padding: 5px;
     flex-wrap: nowrap;
     position: relative;
+    padding: 15px 10px;
   }
   thead{
     background-color: hsl(210, 40%, 98%);
