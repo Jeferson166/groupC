@@ -1,5 +1,5 @@
 main {
-  background-color: hsla(226, 71%, 40%, 0.048) !important;
+  background-color: hsl(228,13%,92%) !important;
   min-height: 100dvh;
   align-content: baseline;
 }
@@ -14,7 +14,7 @@ main {
   padding: 15px;
   border-radius: 10px;
   inset: auto 0 auto 0;
-  background-color: hsl(210, 40%, 98%) !important;
+  background-color: hsl(220,30%,97%) !important;
 }
 
 .content_row {
@@ -85,13 +85,14 @@ main {
   background-color: hsl(226, 71%, 40%);
 }
 .submit:hover {
-  background-color: hsl(226deg 71% 40% / 38%);
+  background-color: hsl(226, 71%, 35%);
   transition: 1s;
 }
 .cancel {
   font-size: 0.875rem;
   padding: 5px 20px !important;
   background-color: hsl(226deg 71% 40% / 3%);
+  background-color: hsl(226, 71%, 95%);
   border: 1px solid hsl(226, 71%, 40%) !important;
 }
 
@@ -204,7 +205,7 @@ main {
     background-color: hsl(226, 71%, 40%);
   }
   .add_patient:hover {
-    background-color: hsl(226deg 71% 40% / 38%);
+    background-color: hsl(226, 71%, 20%);
     transition: 1s;
   }
   .add_patient p {
