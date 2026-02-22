@@ -194,16 +194,14 @@ main{
     border-width: 0px 0px 1px 0px;
   }
 
-  /*tab_1, 2, 3 is for Patient list, Health record, Add Patient*/
+  /*tab_1, 3 is for Patient list, Health record, Add Patient*/
   .tab_3{
     justify-content: end;
   }
   .tab_1,
-  .tab_2,
   .tab_3{
     padding: 0 0 3px 0;
   }
-  .tab_2,
   .tab_3{
     padding: 0 0 5px 0;
   }
