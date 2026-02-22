@@ -6,7 +6,25 @@
 
 :root {
   --header_fixed_height: 56px; /*The user_name*/
+  --side_bar_fixed_width: 20dvw; /*Width for side bar*/
+  --main_content_fixed_width: 70dvw; /*Width for main content*/
 }
+
+/*
+| Element         | HSL              |
+| --------------- | ---------------- |
+| Primary         | hsl(226,71%,40%) | Based
+| Text Primary    | hsl(222,20%,15%) | Important or headers
+| Text Secondary  | hsl(222,14%,40%) | Less Important text
+| HTML Background | hsl(228,13%,92%) | The main color
+| Main Content BG | hsl(220,30%,97%) | The main container 
+| Container BG    | hsl(0,0%,100%)   | Child of container or cards
+| Sidebar BG      | hsl(226,50%,15%) | Side bar
+| Header BG       | hsl(226,45%,92%) | User name
+| Success         | hsl(145,63%,42%) | Success, Active, Good
+| Warning         | hsl(40,90%,55%)  | Pending, Notice
+| Danger          | hsl(0,70%,50%)   | Inactive, Reject, Bad
+*/
 
 html {
   font-size: 16px;
@@ -41,7 +59,7 @@ html {
 
 .title {
   font-size: 1.5625rem;
-  color: hsl(0, 0%, 5%);
+  color: hsl(222,20%,15%);
 }
 
 .normal_text {
@@ -51,20 +69,21 @@ html {
 
 .h1 {
   font-size: 1.4375rem;
-  color: hsl(0, 0%, 30%);
+  color: hsl(222,20%,15%);
 }
 .h2 {
   font-size: 1.25rem;
-  color: hsl(0, 0%, 30%);
+  color: hsl(222,20%,15%);
 }
 .h3 {
   font-size: 1rem;
-  color: hsl(0, 0%, 30%);
+  color: hsl(222,20%,15%);
 }
 
 .highlights {
   background-color: hsl(0, 0%, 100%);
 }
+/*Preset end*/
 
 /*Side panel container*/
 /*Side panel active*/
@@ -81,16 +100,9 @@ aside nav li {
   width: fit-content;
   width: 100%;
 }
-/*Test*/
+/*side panel hover*/
 aside{
     background-color: hsl(226, 50%, 15%) !important;
-}
-.logo {
-  pointer-events: none !important;
-}
-
-aside nav li a{
-  color: hsl(0, 0%, 100%) !important;
 }
 
 aside nav li:hover {
@@ -104,18 +116,16 @@ aside nav li:hover a {
   border-width: 0 0 0 2px;
   font-weight: bold;
 }
-.user_name_container{
-    background-color: hsl(226, 40%, 92%) !important;
-}
 /*end*/
+
 aside nav li a {
   text-decoration-line: none;
-  color: black;
   display: flex;
   align-items: center;
   margin: 5px 0px;
   gap: 10px;
   margin: 5% 0px;
+  color: hsl(0, 0%, 100%) !important;
 }
 
 .side_panel_ctner_1 {
@@ -190,7 +200,9 @@ main li p {
   height: var(--header_fixed_height);
   padding: 1rem;
   width: 100%;
-  background-color: hsl(0, 0%, 95%);
+  color: hsl(222,20%,15%);
+  font-weight: bolder;
+  background-color: hsl(226, 45%, 92%);
 }
 .main_container {
   padding: 1rem;
@@ -225,6 +237,10 @@ main {
   display: inline-block;
 }
 
+.logo {
+  pointer-events: none !important;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 425px) {
   /*Mobile view*/
   /*Side bar layout*/
@@ -251,13 +267,12 @@ main {
   }
   /*Side bar layout*/
   aside {
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     align-self: flex-start;
     height: 100dvh;
     overflow-y: auto;
-    width: var(--fixed_width_for_sb);
+    width: var(--side_bar_fixed_width) !important;
     z-index: 50;
   }
   aside nav {
@@ -279,12 +294,8 @@ main {
     gap: 30px;
     margin-bottom: 30px;
   }
-  .side_panel_expanded {
-    width: 13vw;
-    overflow-x: hidden;
-  }
   main {
-    width: calc(100dvh - var(--fixed_width_for_sb));
+    width: calc(100dvh - var(--side_bar_fixed_width));
   }
   .expand_btn {
     visibility: hidden !important;
@@ -292,7 +303,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1500px) {
+/* @media only screen and (min-width: 1440px) and (max-width: 1500px) {
   .side_panel_expanded {
     width: 13vw;
     overflow-x: hidden;
@@ -318,4 +329,4 @@ main {
     width: 18vw;
     overflow-x: hidden;
   }
-}
+} */

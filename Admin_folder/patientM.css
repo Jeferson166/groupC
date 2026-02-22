@@ -1,5 +1,5 @@
 main {
-  background-color: hsla(226, 71%, 40%, 0.048) !important;
+  background-color: hsl(228, 13%, 92%) !important;
   min-height: 100dvh;
   align-content: baseline;
 }
@@ -21,7 +21,6 @@ main {
 
 .content_row a,
 .content_tabs a {
-  color: hsl(0, 0%, 0%);
   text-decoration: none;
 }
 
@@ -174,7 +173,7 @@ main {
     display: flex;
     flex: 1 1 100%;
     height: calc(100dvh - var(--header_fixed_height) - 33px);
-    background-color: hsl(210, 40%, 98%) !important;
+    background-color: hsl(220,30%,97%) !important;
     padding: 0.9375rem;
     margin: 16px;
     border-radius: 10px;
@@ -241,6 +240,10 @@ main {
     border: solid hsla(0, 0%, 39%, 0.726);
     border-width: 0px 0px 1px 0px;
   }
+  .patient_list{
+    color: hsl(222,20%,15%);
+    font-weight: bold;
+  }
 
   /*tab_1, 2, 3 is for Desktop view Patient list, Health record, Add Patient*/
   .tab_3 {
@@ -267,6 +270,11 @@ main {
     position: sticky;
     top: 0;
     background-color: hsl(210, 40%, 98%);
+    color: hsl(222,20%,15%);
+  }
+
+  tbody{
+    color: hsl(222,14%,40%);
   }
 
   thead th,
