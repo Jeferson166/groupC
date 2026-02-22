@@ -59,7 +59,7 @@ html {
 
 .title {
   font-size: 1.5625rem;
-  color: hsl(222,20%,15%);
+  color: hsl(222, 20%, 15%);
 }
 
 .normal_text {
@@ -69,15 +69,15 @@ html {
 
 .h1 {
   font-size: 1.4375rem;
-  color: hsl(222,20%,15%);
+  color: hsl(222, 20%, 15%);
 }
 .h2 {
   font-size: 1.25rem;
-  color: hsl(222,20%,15%);
+  color: hsl(222, 20%, 15%);
 }
 .h3 {
   font-size: 1rem;
-  color: hsl(222,20%,15%);
+  color: hsl(222, 20%, 15%);
 }
 
 .highlights {
@@ -101,8 +101,8 @@ aside nav li {
   width: 100%;
 }
 /*side panel hover*/
-aside{
-    background-color: hsl(226, 50%, 15%) !important;
+aside {
+  background-color: hsl(226, 50%, 15%) !important;
 }
 
 aside nav li:hover {
@@ -126,14 +126,6 @@ aside nav li a {
   gap: 10px;
   margin: 5% 0px;
   color: hsl(0, 0%, 100%) !important;
-}
-
-.side_panel_ctner_1 {
-  margin: 20px 0px;
-}
-.side_panel_ctner_2 {
-  flex: 1;
-  align-content: flex-end;
 }
 
 /*Side panel modes*/
@@ -200,7 +192,7 @@ main li p {
   height: var(--header_fixed_height);
   padding: 1rem;
   width: 100%;
-  color: hsl(222,20%,15%);
+  color: hsl(222, 20%, 15%);
   font-weight: bolder;
   background-color: hsl(226, 45%, 92%);
 }
@@ -239,6 +231,7 @@ main {
 
 .logo {
   pointer-events: none !important;
+  height: fit-content;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 425px) {
@@ -264,7 +257,7 @@ main {
     display: flex !important;
     flex-wrap: wrap;
     min-height: 100dvh;
-  } 
+  }
   /*Side bar layouts*/
   aside {
     position: sticky;
@@ -274,25 +267,39 @@ main {
     overflow-y: auto;
     width: var(--side_bar_fixed_width) !important;
     z-index: 50;
+    overflow-x: hidden;
   }
   aside nav {
     position: relative !important;
     top: auto;
     height: 100%;
   }
-  .side_panel_ctner_1 {
+  .logo,
+  .service_tabs {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: flex-start;
+    margin: 20px 0px;
     gap: 15px;
   }
-  .side_panel_ctner_2 {
+  .service_tabs {
+    height: 50%;
+  }
+  .other_option {
+    height: 25%;
+  }
+  .other_option {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 15px;
+    margin-bottom: 2%;
+  }
+  .setting {
+    border: solid hsl(223, 64%, 6%);
+    border-width: 1px 0 0 0;
+    align-content: flex-end;
   }
   main {
     width: calc(100dvh - var(--side_bar_fixed_width));
