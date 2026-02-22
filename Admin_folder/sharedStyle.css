@@ -264,8 +264,8 @@ main {
     display: flex !important;
     flex-wrap: wrap;
     min-height: 100dvh;
-  }
-  /*Side bar layout*/
+  } 
+  /*Side bar layouts*/
   aside {
     position: sticky;
     top: 0;
