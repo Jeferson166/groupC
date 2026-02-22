@@ -271,6 +271,7 @@ main {
     align-items: end;
     grid-template-columns: 30% 70%;
     grid-template-rows: 1fr;
+    height: fit-content;
     border: solid hsla(0, 0%, 39%, 0.726);
     border-width: 0px 0px 1px 0px;
   }
