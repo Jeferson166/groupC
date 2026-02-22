@@ -24,6 +24,13 @@
 | Success         | hsl(145,63%,42%) | Success, Active, Good
 | Warning         | hsl(40,90%,55%)  | Pending, Notice
 | Danger          | hsl(0,70%,50%)   | Inactive, Reject, Bad
+
+Buttons
+| CTA Button      | hsl(226, 71%, 40%)  | Save, Enter
+|                 | hsl(226, 71%, 35%)  | Hover
+| Secondary Button| hsl(226, 71%, 40%)  | Cancel
+|                 | hsl(226, 71%, 95%)  | BG
+
 */
 
 html {
@@ -89,9 +96,8 @@ html {
 /*Side panel active*/
 aside nav {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: calc(20% - 30px) 50% 30%;
 }
 aside nav li {
   list-style: none;
@@ -192,7 +198,7 @@ main li p {
   height: var(--header_fixed_height);
   padding: 1rem;
   width: 100%;
-  color: hsl(222, 20%, 15%);
+  color: hsl(226, 50%, 15%);
   font-weight: bolder;
   background-color: hsl(226, 45%, 92%);
 }
@@ -231,7 +237,6 @@ main {
 
 .logo {
   pointer-events: none !important;
-  height: fit-content;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 425px) {
@@ -271,7 +276,6 @@ main {
   }
   aside nav {
     position: relative !important;
-    top: auto;
     height: 100%;
   }
   .logo,
@@ -281,23 +285,22 @@ main {
     flex-wrap: nowrap;
     align-content: flex-start;
     margin: 20px 0px;
-    gap: 15px;
+    gap: clamp(0.5rem, calc(0.5dvw + 0.1rem), 1rem);
   }
-  .service_tabs {
-    height: 50%;
-  }
-  .other_option {
-    height: 25%;
+  nav,
+  nav svg {
+    font-size: clamp(0.5rem, calc(1dvw + 0.2rem), 1rem);
   }
   .other_option {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 15px;
+    gap: clamp(0.5rem, calc(0.5dvw + 0.1rem), 1rem);
     margin-bottom: 2%;
   }
   .setting {
-    border: solid hsl(223, 64%, 6%);
+    padding-top: 7px;
+    border: solid hsl(0, 0%, 100%);
     border-width: 1px 0 0 0;
     align-content: flex-end;
   }
