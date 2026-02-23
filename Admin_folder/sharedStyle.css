@@ -111,7 +111,8 @@ aside {
   background-color: hsl(226, 50%, 15%) !important;
 }
 
-aside nav li:hover {
+aside nav .service_tabs li:hover,
+aside nav .other_option li:hover {
   padding-left: 5px;
   background-color: hsl(226, 50%, 22%);
   transition: all 0.2s ease-in-out;
@@ -156,12 +157,6 @@ aside nav li a {
   transform: translateX(0%);
 }
 
-.side_panel_btn_ctnair {
-  position: relative;
-  inset: 0 0 0 -130%;
-  padding: 15px;
-}
-
 .collapse_btn {
   position: absolute;
   inset: 0 0 0 0;
@@ -170,11 +165,6 @@ aside nav li a {
   border-radius: 8px;
   background-color: hsl(0, 0%, 95%, 0.8);
   pointer-events: visible !important;
-}
-.side_panel_btn_ctnair .expand_btn {
-  position: relative;
-  inset: 0 0 0 1200%;
-  transform: rotate(180deg);
 }
 
 /*Main content*/
@@ -230,9 +220,10 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4rem;
-  width: 4rem;
+  height: 7rem;
+  width: 7rem;
   display: inline-block;
+  z-index: 5;
 }
 
 .logo {
@@ -241,7 +232,7 @@ main {
 
 @media only screen and (min-width: 300px) and (max-width: 425px) {
   /*Mobile view*/
-  /*Side bar layout*/
+  /*Mobile view Side bar layout*/
   aside {
     position: fixed !important;
     height: 100dvh !important;
@@ -253,6 +244,69 @@ main {
   .expand_btn {
     visibility: visible !important;
     pointer-events: visible !important;
+  }
+
+  /*Mobile view service tabs*/
+
+  .logo { /*Mobile view logo*/
+    margin: 0px 0px !important;
+  }
+  .logo li {
+    display: grid;
+    grid-template-columns: 75% 15%;
+  }
+  .logo,
+  .service_tabs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    margin: 20px 0px;
+    gap: clamp(0.5rem, calc(0.5dvw + 0.1rem), 1rem);
+  }
+  nav,
+  nav span {
+    font-size: clamp(0.5rem, calc(1dvw + 0.8rem), 1rem);
+  }
+  .other_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: clamp(0.5rem, calc(0.5dvw + 0.1rem), 1rem);
+    margin-bottom: 2%;
+  }
+  .setting {
+    padding-top: 7px;
+    border: solid hsl(0, 0%, 100%);
+    border-width: 1px 0 0 0;
+    align-content: flex-end;
+  }
+
+  /*Mobile view Side panel close and open*/
+
+  .side_panel_btn_ctnair {
+    margin: 10px;
+    width: 100%;
+    position: relative;
+    inset: -35% auto auto 45%;
+    pointer-events: visible;
+    z-index: 15;
+  }
+  .side_panel_btn_ctnair > span {
+    display: block;
+    position: relative;
+    height: 4px;
+    background-color: hsl(226, 71%, 40%);
+  }
+  .side_panel_btn_ctnair > span:nth-child(1) {
+    transform: rotate(130deg);
+  }
+  .side_panel_btn_ctnair > span:nth-child(2) {
+    bottom: 4px;
+    transform: rotate(50deg);
+  }
+  body:has(.side_panel_btn_ctnair:focus) aside{
+    display: none;
   }
 }
 
@@ -288,7 +342,7 @@ main {
     gap: clamp(0.5rem, calc(0.5dvw + 0.1rem), 1rem);
   }
   nav,
-  nav svg {
+  nav span {
     font-size: clamp(0.5rem, calc(1dvw + 0.2rem), 1rem);
   }
   .other_option {
