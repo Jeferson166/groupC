@@ -1,5 +1,5 @@
 main {
-  background-color: hsl(228,13%,92%) !important;
+  background-color: hsl(228, 13%, 92%) !important;
   min-height: 100dvh;
   align-content: baseline;
 }
@@ -14,7 +14,7 @@ main {
   padding: 15px;
   border-radius: 10px;
   inset: auto 0 auto 0;
-  background-color: hsl(220,30%,97%) !important;
+  background-color: hsl(220, 30%, 97%) !important;
 }
 
 .content_row {
@@ -94,18 +94,6 @@ main {
   background-color: hsl(226deg 71% 40% / 3%);
   background-color: hsl(226, 71%, 95%);
   border: 1px solid hsl(226, 71%, 40%) !important;
-}
-
-.text_box{
-  width: 100%;
-  min-height: 130px;
-  position: absolute;
-}
-.text_box textarea{
-  margin-top: 5px;
-  width: 95%;
-  min-height: 130px;
-  resize: none;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 427px) {
@@ -257,6 +245,18 @@ main {
       "form_7 form_8"
       "form_9 form_10"
       "submit submit";
+  }
+
+  .text_box {
+    width: 100%;
+    min-height: 130px;
+    position: absolute;
+  }
+  .text_box textarea {
+    margin-top: 5px;
+    width: 95%;
+    min-height: 130px;
+    resize: none;
   }
 
   /*Desktop view layout*/
