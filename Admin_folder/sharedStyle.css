@@ -248,7 +248,8 @@ main {
 
   /*Mobile view service tabs*/
 
-  .logo { /*Mobile view logo*/
+  .logo {
+    /*Mobile view logo*/
     margin: 0px 0px !important;
   }
   .logo li {
@@ -305,7 +306,7 @@ main {
     bottom: 4px;
     transform: rotate(50deg);
   }
-  body:has(.side_panel_btn_ctnair:focus) aside{
+  body:has(.side_panel_btn_ctnair:focus) aside {
     display: none;
   }
 }
@@ -317,7 +318,7 @@ main {
     flex-wrap: wrap;
     min-height: 100dvh;
   }
-  /*Side bar layouts*/
+  /*Desktop view Side bar layouts*/
   aside {
     position: sticky;
     top: 0;
@@ -332,6 +333,13 @@ main {
     position: relative !important;
     height: 100%;
   }
+
+  /*Desktop view logo*/
+  .logo > li i {
+    inset: auto 25% 25% 25%;
+    position: relative;
+  }
+  /*Desktop view service tabs*/
   .logo,
   .service_tabs {
     display: flex;
@@ -358,6 +366,7 @@ main {
     border-width: 1px 0 0 0;
     align-content: flex-end;
   }
+  /*Desktop view Others*/
   main {
     width: calc(100dvh - var(--side_bar_fixed_width));
   }
