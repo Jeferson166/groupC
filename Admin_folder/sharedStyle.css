@@ -7,6 +7,7 @@
 :root {
   --header_fixed_height: 56px; /*The user_name*/
   --side_bar_fixed_width: 20dvw; /*Width for side bar*/
+  --side_bar_fixed_width_mobile: 70dvw;
   --main_content_fixed_width: 70dvw; /*Width for main content*/
 }
 
@@ -137,34 +138,33 @@ aside nav li a {
 
 /*Side panel modes*/
 .side_panel_hidden {
+  /*Elements inside of aside*/
   opacity: 0 !important;
   visibility: hidden !important;
 }
 .side_panel_active {
+  /*Elements inside of aside*/
   opacity: 1 !important;
   visibility: visible !important;
 }
 .side_panel_collapsed {
+  /*Aside*/
+  display: none;
   width: 18vw;
   pointer-events: none;
   transition: visibility 0.3s ease-in-out;
+  /**/
   transform: translateX(100%);
 }
 .side_panel_expanded {
+  /*Aside*/
   width: auto;
   background-color: hsl(0, 0%, 95%);
   transition: visibility 0.3s ease-in-out;
   transform: translateX(0%);
 }
-
-.collapse_btn {
-  position: absolute;
-  inset: 0 0 0 0;
-  padding: 10%;
-  transform: rotate(0deg);
-  border-radius: 8px;
-  background-color: hsl(0, 0%, 95%, 0.8);
-  pointer-events: visible !important;
+#collapse_btn {
+  cursor: pointer;
 }
 
 /*Main content*/
@@ -220,8 +220,8 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: clamp(6rem, (0.7dvh + 0.9rem), 7rem);
-  width: clamp(6rem, (0.7dvh + 0.9rem), 7rem);
+  height: clamp(6rem, (1dvh + 5rem), 7rem);
+  width: clamp(6rem, (1dvh + 5rem), 7rem);
   display: inline-block;
   z-index: 5;
 }
@@ -232,8 +232,15 @@ main {
 
 @media only screen and (min-width: 300px) and (max-width: 425px) {
   /*Mobile view*/
+
+  .user_name_container {
+    display: grid;
+    grid-template-columns: 15% 70%;
+  }
+
   /*Mobile view Side bar layout*/
   aside {
+    width: var(--side_bar_fixed_width_mobile) !important;
     position: fixed !important;
     height: 100dvh !important;
   }
@@ -245,11 +252,15 @@ main {
     visibility: visible !important;
     pointer-events: visible !important;
   }
+  aside {
+    display: block;
+  }
 
   /*Mobile view service tabs*/
 
   .logo {
     /*Mobile view logo*/
+    position: relative;
     margin: 0px 0px !important;
   }
   .logo li {
@@ -283,30 +294,60 @@ main {
     align-content: flex-end;
   }
 
-  /*Mobile view Side panel close and open*/
-
-  .side_panel_btn_ctnair {
-    margin: 10px;
+  /*Mobile view collapse button layout, default(hidden side bar)*/
+  .user_name_container > div {
+    position: relative;
+    inset: 25% 100% auto auto;
     width: 100%;
-    position: relative;
-    inset: -35% auto auto 45%;
-    pointer-events: visible;
-    z-index: 15;
   }
-  .side_panel_btn_ctnair > span {
-    display: block;
+  .user_name_container > div span {
     position: relative;
+    display: block;
+    width: 30px;
     height: 4px;
     background-color: hsl(226, 71%, 40%);
+    border-radius: 10px;
   }
-  .side_panel_btn_ctnair > span:nth-child(1) {
-    transform: rotate(130deg);
+  .user_name_container > div span:nth-child(1) {
+    top: 15px;
   }
-  .side_panel_btn_ctnair > span:nth-child(2) {
-    bottom: 4px;
-    transform: rotate(50deg);
+  .user_name_container > div span:nth-child(3) {
+    top: -15px;
   }
-  body:has(.side_panel_btn_ctnair:focus) aside {
+
+  /*Mobile view collapse button layout, default(hidden side bar)*/
+  .active_sidebar {
+    position: fixed !important;
+    /*left: calc(var(--side_bar_fixed_width_mobile) - 40px) !important;
+    top: 12% !important;*/
+    inset: 5% auto auto calc(var(--side_bar_fixed_width_mobile) - 40px) !important;
+    width: 65px !important;
+    height: 65px;
+    margin: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+  }
+  .user_name_container > .active_sidebar span:nth-child(2) {
+    display: none;
+  }
+  .user_name_container > .active_sidebar span:nth-child(1) {
+    transform: rotate(40deg);
+    top: 12px !important;
+  }
+  .user_name_container > .active_sidebar span:nth-child(3) {
+    transform: rotate(300deg);
+    top: 12px !important;
+    right: 30px !important;
+  }
+
+  /*function for collapse button*/
+  .collapse_button_active {
+    display: block;
+  }
+  .collapse_button_hide {
     display: none;
   }
 }
@@ -320,6 +361,7 @@ main {
   }
   /*Desktop view Side bar layouts*/
   aside {
+    display: block;
     position: sticky;
     top: 0;
     align-self: flex-start;
@@ -374,6 +416,7 @@ main {
     visibility: hidden !important;
     pointer-events: none !important;
   }
+  /*Hidden in desktop view*/
 }
 
 /* @media only screen and (min-width: 1440px) and (max-width: 1500px) {
