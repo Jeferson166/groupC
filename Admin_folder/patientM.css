@@ -1,12 +1,11 @@
 main {
   background-color: hsl(228, 13%, 92%) !important;
-  min-height: 100dvh;
-  align-content: baseline;
+  height: 95%;
 }
 
-.content_row {
-  display: flex;
-  width: 100%;
+.content_row a,
+.content_tabs a {
+  text-decoration: none;
 }
 
 .btn_tab_active1 {
@@ -17,11 +16,6 @@ main {
 .btn_tab_active0 {
   align-items: center;
   display: flex;
-}
-
-.content_row a,
-.content_tabs a {
-  text-decoration: none;
 }
 
 .search_container {
@@ -49,54 +43,23 @@ main {
   display: none;
 }
 
-/*Mobile view patients details layout*/
-.cards_container {
-  display: grid;
-  gap: 10px;
-  grid-auto-columns: minmax(200px, 2500px);
-  min-height: 296px;
-  max-height: 575px;
-  overflow-y: scroll;
-  border-radius: 10px;
-}
-.patient_card {
-  display: grid;
-  background-color: hsla(222, 43%, 91%, 0.507);
-  grid-template-columns: 1fr 0.4fr;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:
-    "patient_information_1 patient_information_2"
-    "patient_information_3 patient_information_3"
-    "patient_information_4 patient_information_5"
-    "patient_information_6 patient_information_6"
-    "patient_information_7 patient_information_7";
-  padding: 10px;
-  row-gap: 10px;
-  column-gap: 10px;
-  border-radius: 10px;
-}
-.patient_information_4,
-.patient_information_5 {
-  display: flex;
-  gap: 10px;
-}
-
 @media only screen and (min-width: 300px) and (max-width: 427px) {
   /*mobile view*/
 
   .mobile_view {
-    display: flex;
-    flex: 1 1 100%;
     background-color: hsl(210, 40%, 98%) !important;
     padding: 0.9375rem;
     margin: 16px;
     border-radius: 10px;
   }
 
-  .desktop_content_row {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
+  /*Mobile view tabs*/
+  .content_tabs {
+    display: flex;
+    width: 100%;
+  }
+  .content_tabs div {
+    color: hsl(222, 20%, 15%);
   }
 
   .btn_tab_active1,
@@ -115,7 +78,6 @@ main {
     border-radius: 10px 10px 0 0;
     background-color: hsla(226, 71%, 40%, 0.116);
     border-color: hsl(226, 71%, 40%);
-    flex: 1 1 auto;
   }
 
   .btn_actv1 {
@@ -126,43 +88,132 @@ main {
     display: none;
   }
 
-  /*Mobile view patient details*/
-  .mobile_view {
-    display: grid;
+  /*Mobile view cards layout*/
+  .cards_container{
+    overflow-y: hidden;
+    height: 80%;
+  }
+  .cards {
+    overflow-y: scroll;
+    border-radius: 10px;
+    height: 100%;
+  }
+  .patient_card {
+    width: 100%;
+  }
+  details {
+    background-color: hsl(210, 40%, 96%);
+    box-shadow: 1px 5px 8px rgb(0 0 0 / 8%);
+    border: solid 1px hsl(226deg 71% 40% / 9%);
+    padding: 10px;
   }
 
-  /*Mobile view Patient List text*/
-  .patient_information_1 {
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 1.125rem;
-    color: hsl(226, 71%, 40%) !important;
-    text-decoration: underline;
-  }
+  /*Mobile view cards details*/
+  summary {
+    position: relative;
+    padding-right: 2.2rem;
+    list-style: none;
 
-  .patient_information_2 {
-    display: grid;
-    text-align: center;
+    /*layout*/
+    display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 1rem;
-    color: hsl(98.3, 89.2%, 25.5%);
-    border-radius: 500px;
+  }
+  details {
+    border-radius: 10px;
+    margin: 15px 0;
   }
 
-  .patient_information_3,
-  .patient_information_4,
-  .patient_information_5,
-  .patient_information_6,
-  .patient_information_7,
-  .patient_information_8,
-  .patient_information_9 {
-    color: hsl(0 0% 30%);
+  summary::after {
+    content: "ᐳ";
+    position: absolute;
+    right: 0.6rem; 
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.18s ease-out 0ms;
+  }
+
+  details[open] summary::after {
+    transform: translateY(-50%) rotate(270deg);
+  }
+
+  details[open] {
+    background-color: hsl(0, 0%, 100%) !important;
+  }
+
+  /*Mobile view cards info text*/
+  .p_name {
+    color: hsl(226, 71%, 40%);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    /*layout*/
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    width: 80%;
+  }
+  .p_stat {
+    color: hsl(145, 63%, 42%);
+    width: 20%;
+  }
+  .p_id {
+    color: hsl(222, 14%, 40%);
+    font-size: 0.9rem;
+  }
+  .p_age {
+    color: hsl(222, 20%, 15%);
+  }
+  .p_gender {
+    color: hsl(222, 20%, 15%);
+    
+  }
+  .p_contact {
+    color: hsl(222, 20%, 15%);
+    font-weight: 600;
+    font-size: 0.8rem;
+
+    /*layout*/
+    display: flex;
+    gap: 5px;
+  }
+  .p_address {
+    color: hsl(222, 14%, 40%);
+    font-size: 0.8rem;
+
+    /*layout*/
+    display: flex;
+    gap: 5px;
+  }
+
+  /*Mobile view card details layout*/
+  details[open] summary > .p_name{
+    text-overflow: unset;
+    overflow-x: unset;
+    overflow-wrap: anywhere;
+  }
+  details[open] > div{
+    display: grid;
+    grid-template-areas: 
+    "id id"
+    "age_gender contact"
+    "address address";
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .p_age::after {
+    content: " | ";
+  }
+  .p_id::before{
+    content: "#";
+  }
+  .p_age_gender{
+    display: flex;
+    gap: 5px;
+    font-size: 0.8rem;
   }
 
   /*Hidden in mobile view*/
-  .desktop_view {
+  .desktop_view,
+  .desktop_content_row {
     display: none;
     pointer-events: none;
   }
@@ -179,7 +230,7 @@ main {
     margin: 16px;
     border-radius: 10px;
   }
-  .mobile_content_row {
+  .mobile_view > div {
     display: none;
     visibility: hidden;
     pointer-events: none;

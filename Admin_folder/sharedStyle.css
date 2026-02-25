@@ -5,10 +5,18 @@
 }
 
 :root {
-  --header_fixed_height: 56px; /*The user_name*/
+  --header_fixed_height: 56px; /*The user_name try 10%*/ 
   --side_bar_fixed_width: 20dvw; /*Width for side bar*/
-  --side_bar_fixed_width_mobile: 70dvw;
   --main_content_fixed_width: 70dvw; /*Width for main content*/
+
+  /*Desktop view*/
+
+  /*Mobile view*/
+  --side_bar_fixed_width_mobile: 70dvw; /*Width of sidebar mobile view*/
+  --header_fixed_height_mobile: 10%; /*Fixed height of mobile view header*/
+  --header_fixed_width_mobile: 100dvw; /*Fixed width of mobile view header*/
+  --body_width_mobile: 100dvw; /*Fixed width of mobile view body*/
+  --body_height_mobile: 100dvh; /*Fixed width of mobile view header*/
 }
 
 /*
@@ -148,7 +156,7 @@ aside nav li a {
   visibility: visible !important;
 }
 
-/*Main content*/
+/*Shared Main content*/
 main {
   display: flex;
   flex-wrap: wrap;
@@ -165,10 +173,9 @@ main li p {
 }
 .user_name_container {
   display: flex;
-  justify-content: flex-end;
-  height: var(--header_fixed_height);
-  padding: 1rem;
   width: 100%;
+  justify-content: flex-end;
+  padding: 1rem;
   color: hsl(226, 50%, 15%);
   font-weight: bolder;
   background-color: hsl(226, 45%, 92%);
@@ -214,9 +221,29 @@ main {
 @media only screen and (min-width: 300px) and (max-width: 425px) {
   /*Mobile view*/
 
+  /*Mobile view Layout*/
+  body{
+    width: var(--body_width_mobile) !important;
+    height: var(--body_height_mobile) !important;
+  }
+
+  body main > header {
+    height: var(--header_fixed_height_mobile) !important;
+    width: 100% !important;
+  }
+  
+  body main > section {
+    height: calc(100% - var(--header_fixed_height_mobile)) !important;
+    width: 100% !important;
+  }
+
+  /*Mobile view header layout*/
   .user_name_container {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 15% 70%;
+  }
+  .user_name_container > li {
+    justify-content: right !important;
   }
 
   /*Mobile view Side bar layout*/
@@ -235,6 +262,7 @@ main {
   }
   aside {
     display: block;
+    z-index: 19 !important;
   }
 
   .side_panel_collapsed {
