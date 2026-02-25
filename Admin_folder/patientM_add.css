@@ -69,6 +69,15 @@ main {
   border-radius: 5px;
   border: 1px solid hsla(0, 0%, 0%, 0.192);
 }
+
+.text_box > textarea {
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -91,7 +100,6 @@ main {
 .cancel {
   font-size: 0.875rem;
   padding: 5px 20px !important;
-  background-color: hsl(226deg 71% 40% / 3%);
   background-color: hsl(226, 71%, 95%);
   border: 1px solid hsl(226, 71%, 40%) !important;
 }
@@ -117,16 +125,23 @@ main {
 
   /*Mobile Buttons layout*/
   .mobile_buttons_containers {
-    margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr;
-    gap: 10px;
+    align-items: start;
+    justify-content: center;
+    grid-template-columns: 35% 35%;
+    grid-auto-rows: 100px;
   }
+
+  .mobile_buttons_containers .buttons a > input {
+    font-size: 1rem !important;
+    padding: 4px 20px 4px 20px;
+  }
+
   .submit {
-    font-size: 1.1rem;
-    border: none;
-    padding: 7px;
+    border: 1px solid hsla(0, 0%, 0%, 0.192) !important;
+  }
+  .cancel {
+    padding: 4px 10px !important;
   }
 
   /*Mobile Form layout*/
@@ -134,7 +149,9 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    overflow-x: scroll;
     width: 100%;
+    height: 100%;
   }
   .patient_input_details {
     display: flex;
@@ -144,6 +161,11 @@ main {
   }
   .patient_input_details div {
     padding-left: 20px;
+  }
+
+  .text_box > textarea {
+    width: 95%;
+    height: 150px;
   }
 
   /*Mobile view patient details*/

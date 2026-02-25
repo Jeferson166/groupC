@@ -14,20 +14,12 @@
 
 <body>
     <!--Side panel mobile, and desktop view-->
-    <aside class="content_container side_panel_expanded" data-mode="active">
+    <aside class="content_container side_panel_collapsed" data-mode="hidden">
         <nav>
             <!--Logo-->
             <div class="logo">
                 <li>
-                    <i class="hospital_logo side_panel_active" data-mode="active"></i>
-                    <!--when you hit the label, the input checkbox will checked-->
-                    <input type="checkbox" id="collapse_sidebar" hidden>
-                    <label for="collapse_sidebar">
-                        <div class="side_panel_btn_ctnair">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </label>
+                    <i class="hospital_logo" data-mode="hidden"></i>
                 </li>
             </div>
             <!--Other tabs-->
@@ -104,6 +96,11 @@
     </aside>
     <main>
         <header class="user_name_container">
+            <div id="collapse_button" class="hidden_sidebar" tabindex="0" data-mode="sidebar_mode_hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <li>
                 <span class="material-symbols-outlined">
                     account_circle
