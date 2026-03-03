@@ -21,13 +21,12 @@ main {
 .search_container {
   display: flex;
   flex: 1 1 0;
-  margin: 10px 0px;
 }
 
 .search_bar,
 .search_bar:focus-visible {
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   flex-grow: 1;
   border-width: 1px;
   border-color: hsla(0, 0%, 0%, 0.192) !important;

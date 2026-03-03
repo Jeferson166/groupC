@@ -4,21 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Added map-->
-    <meta property="og:description" content="Initialize a map in an HTML element with MapLibre GL JS." />
-    <!--Adding tiles
-    <meta property="og:description" content="Add a third-party raster source to the map." />-->
-
-    <!--Added map-->
-    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.19.0/dist/maplibre-gl.css' />
-    <script src='https://unpkg.com/maplibre-gl@5.19.0/dist/maplibre-gl.js'></script>
-
-    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
-    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
-
     <title>Dashboard</title>
     <link rel="stylesheet" href="/groupC/Admin_folder/sharedStyle.css">
-    <link rel="stylesheet" href="/groupC/Admin_folder/facilities.css">
+    <link rel="stylesheet" href="/groupC/Admin_folder/dashboard_page.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
@@ -120,71 +108,12 @@
                 <p>Jeferson R.D.</p>
             </li>
         </header>
-        <!--Desktop view-->
-        <section class="desktop_view">
-            <div>
-                <div class="facilities_tab_container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-map-search">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5" />
-                        <path d="M9 4v13" />
-                        <path d="M15 7v5" />
-                        <path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                        <path d="M20.2 20.2l1.8 1.8" />
-                    </svg>
-                    <p>Facilities</p>
-                </div>
-            </div>
-
-            <input type="search" placeholder="🔍︎ Search for facilities">
-
-            <div>
-                <div class="table_container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Facility Name</th>
-                                <th>Location</th>
-                                <th>Contact Number</th>
-                                <th>Operating Hours</th>
-                                <th>Services Offered</th>
-                            </tr>
-                        </thead>
-                        <tbody id="locations-tbody">
-                            <tr id="brgy_san_juan" class="active">
-                                <td>Barangay San Juan Health Center</td>
-                                <td>Tanchoco Ave., El Monteverde Subd., Barangay San Juan, Taytay, Rizal</td>
-                                <td>09123456789</td>
-                                <td>(Mon-Sat) <br> 9:00 AM - 5:00 PM</td>
-                                <td>General Hospital</td>
-                            </tr>
-                            <tr id="brgy_santa_ana">
-                                <td>Barangay Sta. Ana Health Center</td>
-                                <td>B.A. Cruz st., Tudela, Barangay Sta. Ana, Taytay, Rizal</td>
-                                <td>09123456789</td>
-                                <td>(Mon-Fri) <br> 8:30 AM - 5:30 PM</td>
-                                <td>General Hospital</td>
-                            </tr>
-                            <tr id="brgy_san_isidro">
-                                <td>Barangay San Isidro Health Center</td>
-                                <td>Noli Pascual st., Gregoria Heights Subd., Barangay San Isidro, Taytay, Rizal</td>
-                                <td>09123456789</td>
-                                <td>(Tue-Sat) <br> 8:00 AM - 5:00 PM</td>
-                                <td>General Hospital</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="map"></div>
-            </div>
+        <!--Start here-->
+        <section class="main_container">
+            h
         </section>
-
-        <!--Mobile view-->
     </main>
     <script src="/groupC/Admin_folder/sidepanel.js"></script>
-    <script src="/groupC/Admin_folder/map.js"></script>
 </body>
 
 </html>
