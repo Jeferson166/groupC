@@ -5,10 +5,17 @@
 }
 
 :root {
-  --header_fixed_height: 56px; /*The user_name*/
   --side_bar_fixed_width: 20dvw; /*Width for side bar*/
-  --side_bar_fixed_width_mobile: 70dvw;
   --main_content_fixed_width: 70dvw; /*Width for main content*/
+  --header_fixed_height: 56px; /*Height for header*/
+
+  /*Desktop view*/
+
+  /*Mobile view*/
+  --side_bar_fixed_width_mobile: 70dvw; /*Width of sidebar mobile view*/
+  --header_fixed_width_mobile: 100dvw; /*Fixed width of mobile view header*/
+  --body_width_mobile: 100dvw; /*Fixed width of mobile view body*/
+  --body_height_mobile: 100dvh; /*Fixed width of mobile view header*/
 }
 
 /*
@@ -147,27 +154,8 @@ aside nav li a {
   opacity: 1 !important;
   visibility: visible !important;
 }
-.side_panel_collapsed {
-  /*Aside*/
-  display: none;
-  width: 18vw;
-  pointer-events: none;
-  transition: visibility 0.3s ease-in-out;
-  /**/
-  transform: translateX(100%);
-}
-.side_panel_expanded {
-  /*Aside*/
-  width: auto;
-  background-color: hsl(0, 0%, 95%);
-  transition: visibility 0.3s ease-in-out;
-  transform: translateX(0%);
-}
-#collapse_btn {
-  cursor: pointer;
-}
 
-/*Main content*/
+/*Shared Main content*/
 main {
   display: flex;
   flex-wrap: wrap;
@@ -183,11 +171,12 @@ main li p {
   align-items: center;
 }
 .user_name_container {
+  /*For desktop {*/
   display: flex;
-  justify-content: flex-end;
-  height: var(--header_fixed_height);
-  padding: 1rem;
   width: 100%;
+  /*}*/
+  justify-content: flex-end;
+  padding: 1rem;
   color: hsl(226, 50%, 15%);
   font-weight: bolder;
   background-color: hsl(226, 45%, 92%);
@@ -233,9 +222,33 @@ main {
 @media only screen and (min-width: 300px) and (max-width: 425px) {
   /*Mobile view*/
 
+  /*Mobile view Layout*/
+  body{
+    width: var(--body_width_mobile) !important;
+    height: var(--body_height_mobile) !important;
+  }
+
+  body > main {
+    height: 95%;
+  }
+
+  body main > header {
+    height: var(--header_fixed_height) !important;
+    width: 100% !important;
+  }
+  
+  body main > section {
+    height: calc(100% - var(--header_fixed_height)) !important;
+    width: 100% !important;
+  }
+
+  /*Mobile view header layout*/
   .user_name_container {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 15% 70%;
+  }
+  .user_name_container > li {
+    justify-content: right !important;
   }
 
   /*Mobile view Side bar layout*/
@@ -254,8 +267,25 @@ main {
   }
   aside {
     display: block;
+    z-index: 19 !important;
   }
 
+  .side_panel_collapsed {
+    /*Aside*/
+    display: none;
+    width: 18vw;
+    pointer-events: none;
+    transition: visibility 0.3s ease-in-out;
+    /**/
+    transform: translateX(100%);
+  }
+  .side_panel_expanded {
+    /*Aside*/
+    width: auto;
+    background-color: hsl(0, 0%, 95%);
+    transition: visibility 0.3s ease-in-out;
+    transform: translateX(0%);
+  }
   /*Mobile view service tabs*/
 
   .logo {
@@ -320,7 +350,7 @@ main {
     position: fixed !important;
     /*left: calc(var(--side_bar_fixed_width_mobile) - 40px) !important;
     top: 12% !important;*/
-    inset: 5% auto auto calc(var(--side_bar_fixed_width_mobile) - 40px) !important;
+    inset: auto auto 90% calc(var(--side_bar_fixed_width_mobile) - 40px) !important;
     width: 65px !important;
     height: 65px;
     margin: 0;
@@ -334,13 +364,13 @@ main {
     display: none;
   }
   .user_name_container > .active_sidebar span:nth-child(1) {
-    transform: rotate(40deg);
-    top: 12px !important;
+    transform: rotate(52deg);
+    top: 13px !important;
   }
   .user_name_container > .active_sidebar span:nth-child(3) {
-    transform: rotate(300deg);
+    transform: rotate(308deg);
     top: 12px !important;
-    right: 30px !important;
+    right: 31px !important;
   }
 
   /*function for collapse button*/
@@ -357,7 +387,25 @@ main {
   body {
     display: flex !important;
     flex-wrap: wrap;
-    min-height: 100dvh;
+  }
+
+  body{
+    width: var(--body_width_mobile) !important;
+    height: var(--body_height_mobile) !important;
+  }
+
+  body > main {
+    height: 95%;
+  }
+
+  body main > header {
+    height: var(--header_fixed_height) !important;
+    width: 100% !important;
+  }
+  
+  body main > section {
+    height: calc(100% - var(--header_fixed_height)) !important;
+    width: 100% !important;
   }
   /*Desktop view Side bar layouts*/
   aside {
@@ -408,7 +456,7 @@ main {
     border-width: 1px 0 0 0;
     align-content: flex-end;
   }
-  /*Desktop view Others*/
+  /*Desktop view, Others*/
   main {
     width: calc(100dvh - var(--side_bar_fixed_width));
   }

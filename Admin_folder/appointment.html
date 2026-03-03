@@ -14,20 +14,12 @@
 
 <body>
     <!--Side panel mobile, and desktop view-->
-    <aside class="content_container side_panel_expanded" data-mode="active">
+    <aside class="content_container side_panel_collapsed" data-mode="hidden">
         <nav>
             <!--Logo-->
             <div class="logo">
                 <li>
-                    <i class="hospital_logo side_panel_active" data-mode="active"></i>
-                    <!--when you hit the label, the input checkbox will checked-->
-                    <input type="checkbox" id="collapse_sidebar" hidden>
-                    <label for="collapse_sidebar">
-                        <div class="side_panel_btn_ctnair">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </label>
+                    <i class="hospital_logo" data-mode="hidden"></i>
                 </li>
             </div>
             <!--Other tabs-->
@@ -104,6 +96,11 @@
     </aside>
     <main>
         <header class="user_name_container">
+            <div id="collapse_button" class="hidden_sidebar" tabindex="0" data-mode="sidebar_mode_hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <li>
                 <span class="material-symbols-outlined">
                     account_circle
@@ -112,8 +109,8 @@
             </li>
         </header>
         <!--Mobile view-->
-        <!--Mobile view main content navigation-->
         <section class="mobile_version">
+            <!--Mobile view tabs-->
             <div class="content_row mobile_content_row">
                 <div class="btn_tab_active1 content_container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -141,46 +138,38 @@
                         <p class="btn_actv0">Add Appointment</p>
                     </div>
                 </a>
-            </div><!--End of Mobile view main content navigation-->
+            </div>
+
             <!--Mobile view search box-->
             <div class="content_row mobile_content_row">
                 <div class="search_container">
                     <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
                 </div>
-            </div><!--End of Mobile view search box-->
-            <!--Mobile view patient list-->
-            <div class="content_row mobile_content_row">
-                <div class="cards_container">
-                    <div class="patient_card">
-                        <div>
-                            <p>Name:</p>
-                            <p>Deocampo, Jeferson R.</p>
-                        </div>
-                        <div>
-                            <p>View / Delete</p>
-                        </div>
-                        <div>
-                            <p>123456789</p>
-                        </div>
-                        <div>
-                            <p>Confirmed</p>
-                        </div>
-                        <div>
-                            <p>03/02/25:</p>
-                            <p>3:30 P.M.</p>
-                        </div>
-                        <div>
-                            <p>Doctor name:</p>
-                            <p>abc, asdasd, a</p>
-                        </div>
-                        <div>
-                            <p>Department:</p>
-                            <p>General Clinic</p>
-                        </div>
+            </div>
 
-                    </div>
+            <!--Mobile view patient list-->
+            <div class="cards_container">
+                <div class="cards">
+                    <details>
+                        <summary>
+                            <p class="p_name">Decampo, Jeferson R.</p>
+                            <p class="p_stat">Comfirmed</p>
+                        </summary>
+                        <div>
+                            <p class="p_day" style="grid-area: day;">Feb. 16, 2026</p>
+                            <p class="p_time" style="grid-area: time;">06:00AM</p>
+                            <p class="p_doc" style="grid-area: doc;">Dr. Naresh Trehan</p>
+                            <p class="p_dept" style="grid-area: dept;">Department 1</p>
+                            <p class="p_gender" style="grid-area: gender;">Male</p>
+                            <p class="p_id" style="grid-area: id;">123456789</p>
+                        </div>
+                    </details>
+
                 </div>
-            </div><!--End of Mobile view patient list-->
+
+            </div>
+
+            <!--End of Mobile view patient list-->
             <!---End of Mobile view-->
         </section>
 
