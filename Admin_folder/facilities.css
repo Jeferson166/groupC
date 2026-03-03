@@ -1,39 +1,111 @@
-main{
-    background-color: hsla(226, 71%, 40%, 0.048) !important;
+main {
+  background-color: hsl(228, 13%, 92%) !important;
 }
 
-.main_container_bg{
-    background-color: hsl(210, 40%, 98%) !important;
+.desktop_view {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  padding: 25px 15px;
+  margin: 16px;
+  border-radius: 10px;
+  background-color: hsl(216, 33%, 97%);
 }
 
-.main_container{
-    display: flex;
-    flex: 1 1 100%;
+.desktop_view > div:nth-child(1) {
+  border: solid hsla(0, 0%, 39%, 0.726);
+  border-width: 0px 0px 1px 0px;
 }
 
-
-@media only screen and (min-width: 300px) and (max-width: 427px){
-    /*mobile view*/
-
+.desktop_view > div > .facilities_tab_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: fit-content;
+  font-weight: 600;
+  gap: 5px;
+  margin-top: 13px;
+  padding-bottom: 10px;
+  border: solid hsl(226, 71%, 40%);
+  border-width: 0px 0px 2px 0px;
 }
 
-@media only screen and (min-width: 426px) and (max-width: 3000px){
-    /*Desktop View*/
+.desktop_view > input {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: hsla(0, 0%, 0%, 0.192) !important;
+}
 
+/*Desktop view Layout between Map and table*/
+.desktop_view > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  height: 70%;
+  gap: 15px;
+}
+
+.table_container {
+  height: 100%;
+  width: 55%;
+}
+
+#map {
+  width: 40%;
+  height: 100%;
+}
+/*Desktop view Table section*/
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.table_container {
+  overflow-y: scroll;
+}
+
+.table_container > table > thead {
+  position: sticky;
+  top: 0px;
+  background-color: hsl(210, 40%, 98%);
+  color: hsl(222, 20%, 15%);
+}
+
+.table_container > table td,
+.table_container > table th {
+  padding: 10px 5px;
+  font-size: 0.9rem;
+}
+
+.table_container > table > tbody {
+  color: hsl(222, 32%, 33%);
+}
+.table_container > table > tbody tr:nth-child(odd) {
+  background-color: hsla(0, 0%, 55%, 0.068);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 427px) {
+  /*mobile view*/
+}
+
+@media only screen and (min-width: 426px) and (max-width: 3000px) {
+  /*Desktop View*/
 }
 
 /*Overriding style only*/
-@media only screen and (min-width: 953px) and (max-width: 2628px){
-    
+@media only screen and (min-width: 953px) and (max-width: 2628px) {
 }
-@media only screen and (min-width: 768px) and (max-width: 880px){
-    
+@media only screen and (min-width: 768px) and (max-width: 880px) {
 }
 
-@media only screen and (min-width: 1341px) and (max-width: 2628px){
-    
+@media only screen and (min-width: 1341px) and (max-width: 2628px) {
 }
 
 @media only screen and (max-width: 1024px) {
-    
 }
