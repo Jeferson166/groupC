@@ -109,8 +109,8 @@
             </li>
         </header>
         <!--Mobile view-->
-        <!--Mobile view main content navigation-->
         <section class="mobile_version">
+            <!--Mobile view tabs-->
             <div class="content_row mobile_content_row">
                 <div class="btn_tab_active1 content_container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -138,18 +138,37 @@
                         <p class="btn_actv0">Add Appointment</p>
                     </div>
                 </a>
-            </div><!--End of Mobile view main content navigation-->
+            </div>
+
             <!--Mobile view search box-->
             <div class="content_row mobile_content_row">
                 <div class="search_container">
                     <input type="search" class="search_bar" placeholder="Search by (Patient name or ID)" id="">
                 </div>
-            </div><!--End of Mobile view search box-->
-            <!--Mobile view patient list-->
-            <div>
-                
             </div>
-            
+
+            <!--Mobile view patient list-->
+            <div class="cards_container">
+                <div class="cards">
+                    <details>
+                        <summary>
+                            <p class="p_name">Decampo, Jeferson R.</p>
+                            <p class="p_stat">Comfirmed</p>
+                        </summary>
+                        <div>
+                            <p class="p_day" style="grid-area: day;">Feb. 16, 2026</p>
+                            <p class="p_time" style="grid-area: time;">06:00AM</p>
+                            <p class="p_doc" style="grid-area: doc;">Dr. Naresh Trehan</p>
+                            <p class="p_dept" style="grid-area: dept;">Department 1</p>
+                            <p class="p_gender" style="grid-area: gender;">Male</p>
+                            <p class="p_id" style="grid-area: id;">123456789</p>
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+
             <!--End of Mobile view patient list-->
             <!---End of Mobile view-->
         </section>

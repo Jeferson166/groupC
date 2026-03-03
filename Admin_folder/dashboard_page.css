@@ -235,6 +235,8 @@
     tbody tr:nth-last-of-type(even){
         background-color: hsl(0, 0%, 90%);
     }
+
+    
 }
 
 /*Overriding style only*/

@@ -1,7 +1,5 @@
 main{
     background-color: hsla(226, 71%, 40%, 0.048) !important;
-    min-height: 100dvh;
-    align-content: baseline;
 }
 
 .main_container_bg{

@@ -154,6 +154,7 @@ main {
   .p_stat {
     color: hsl(145, 63%, 42%);
     width: 20%;
+    font-size: 0.8rem;
   }
   .p_id {
     color: hsl(222, 14%, 40%);
@@ -314,7 +315,7 @@ main {
   /*Desktop view Table section*/
   table {
     border-collapse: collapse;
-    width: 100%;
+    width: 98%;
     height: 80%;
   }
 
@@ -326,7 +327,7 @@ main {
   }
 
   tbody {
-    color: hsl(222, 14%, 40%);
+    color: hsl(222, 32%, 33%);
   }
 
   thead th,
@@ -339,6 +340,11 @@ main {
   }
   tbody tr:nth-child(even) {
     background-color: hsla(0, 0%, 55%, 0.068);
+  }
+
+  /*Hidden in desktop view*/
+  .mobile_view {
+    display: none;
   }
 }
 

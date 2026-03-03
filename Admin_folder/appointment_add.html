@@ -129,7 +129,7 @@
                     </div>
                 </a>
                 <div class="btn_tab_active1 content_container tab_3">
-                    <div class="add_patient">
+                    <div class="add_appointment">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
@@ -145,10 +145,11 @@
             </section>
             <!--End of Dekstop view content tabs-->
 
+
             <!--Mobile view content tabs-->
             <section class="mobile_view_tab">
                 <a href="appointment.html">
-                    <div class="btn_tab_active0 content_container">
+                    <div class="btn_tab_active0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-users">
@@ -161,7 +162,7 @@
                         <p class="btn_actv0">Appointment and Scheduling</p>
                     </div>
                 </a>
-                <div class="btn_tab_active1 content_container">
+                <div class="btn_tab_active1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
@@ -178,20 +179,76 @@
 
             <!--Mobile and desktop view patient form-->
             <section class="form">
+                <form id="appointment_form" action="">
+                    <div>
+                        <p style="grid-area: header;">Patient Information</p>
+                        <div style="grid-area: form_info1;">
+                            <label>Patient Name:</label>
+                            <div class="patient_name_input">
+                                <div>
+                                    <input type="text" id="patient_last_name" name="patient_last_name"
+                                        placeholder="Last name" maxlength="10" required>
+                                </div>
+                                <div>
+                                    <input type="text" id="patient_first_name" name="patient_first_name"
+                                        placeholder="First name" maxlength="10" required>
+                                </div>
+                                <div>
+                                    <input type="text" id="patient_name" name="patient_name"
+                                        placeholder="Middle initial" maxlength="2" required>
+                                </div>
+                            </div>
+                        </div>
 
-                <!--Buttons-->
-                as
-                <div class="mobile_buttons_containers" style="grid-area: submit;">
-                    <div class="buttons">
-                        <a href="patientM.html">
-                            <input class="submit" id="submit" type="submit" value="Save Patient Record">
-                        </a>
+                        <div style="grid-area: form_info2;">
+                            <label for="patient_gender">Gender</label>
+                            <input type="text" id="patient_gender" name="patient_gender"
+                                placeholder="Enter patient gender" maxlength="6" required>
+                        </div>
+
+                        <div style="grid-area: form_info3;">
+                            <label for="patient_contact">Patient Contact Number</label>
+                            <input type="text" id="patient_contact" name="patient_contact"
+                                placeholder="Enter patient contact number" maxlength="15" required>
+                        </div>
+
+                        <div>
+                            <label for="patient_id_apt">Patient ID:</label>
+                            <input type="text" id="patient_id_apt" name="patient_id_apt" placeholder="Click for patient ID" data-prefix="APT" required readonly>
+                        </div>
                     </div>
-                    <div class="buttons">
-                        <a href="patientM.html">
-                            <input class="cancel" type="submit" value="Cancel">
-                        </a>
+
+                    <div>
+                        <p style="grid-area: header;">Appointment Details</p>
+                        <div>
+                            <label for="appointment_date">Appointment Date</label>
+                            <input type="date" id="appointment_date" name="appointment_date" required>
+                        </div>
+
+                        <div>
+                            <label for="appointment_time">Appointment Time</label>
+                            <input type="time" id="appointment_time" name="appointment_time" required>
+                        </div>
+
+                        <div>
+                            <label for="doctor_name">Doctor Name</label>
+                            <input type="text" id="doctor_name" name="doctor_name" placeholder="Enter doctor name" maxlength="20"
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="department">Department</label>
+                            <input type="text" id="department" name="department" placeholder="Enter department name" maxlength="15"
+                                required>
+                        </div>
                     </div>
+                </form>
+                <br>
+                <div><!-- for buttons-->
+                    <button type="submit" form="appointment_form">Save</button>
+                    <a href="appointment.html">
+                        <button type="reset">Cancel</button>
+                    </a>
                 </div>
             </section>
 

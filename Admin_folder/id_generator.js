@@ -1,42 +1,41 @@
-const patient_id = document.getElementById("patient_id");
-const submit = document.getElementById("submit");
+document.addEventListener("DOMContentLoaded", function () {
 
-//for patientM
-patient_id.addEventListener("click", function () {
-    patient_id.value = generateId12();
+    // Select ALL inputs that have a data-prefix attribute
+    const idInputs = document.querySelectorAll("input[data-prefix]");
+
+    idInputs.forEach(input => {
+
+        input.addEventListener("focus", function () {
+
+            // Prevent regenerating if already filled
+            if (!input.value) {
+                const prefix = input.dataset.prefix;
+                input.value = generateId(prefix);
+            }
+
+        });
+
+    });
+
+    function generateId(prefix) {
+        const date = new Date();
+
+        const year = date.getFullYear().toString().slice(-2);
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+
+        const datePart = year * month / day;
+
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        let randomPart = "";
+
+        for (let i = 0; i < 4; i++) {
+            randomPart += chars.charAt(
+                Math.floor(Math.random() * chars.length)
+            );
+        }
+
+        return `${prefix}-${datePart*3}-${randomPart}`;
+    }
+
 });
-
-submit.addEventListener("click", function () {
-    window.alert("database not connected");
-    window.location.href = "patientM.html"
-});
-
-function generateId12() {
-    const timePart = Date.now().toString().slice(-8); // last 8 digits of timestamp
-    const randomPart = Math.floor(Math.random() * 10000)
-        .toString()
-        .padStart(4, "0");
-
-    return timePart + randomPart; // 12 digits
-    
-};
-
-//for appointment_add
-patient_id.addEventListener("click", function () {
-    patient_id.value = generateId11();
-});
-
-submit.addEventListener("click", function () {
-    window.alert("database not connected");
-    window.location.href = "appointment_add.html"
-});
-
-function generateId11() {
-    const timePart = Date.now().toString().slice(-7); // last 7 digits of timestamp
-    const randomPart = Math.floor(Math.random() * 10101)
-        .toString()
-        .padStart(4, "0");
-
-    return timePart + randomPart; // 11 digits
-    
-};

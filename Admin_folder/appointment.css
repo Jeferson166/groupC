@@ -4,7 +4,7 @@
 }
 
 main {
-  background-color: hsla(226, 71%, 40%, 0.048) !important;
+  background-color: hsl(228, 13%, 92%) !important;
 }
 
 .main_container {
@@ -61,18 +61,16 @@ main {
 @media only screen and (min-width: 300px) and (max-width: 427px) {
   /*mobile view*/
 
-  /*Main content Mobile view layout*/
+  /*Mobile view main content layout*/
   .mobile_version {
     margin: 16px;
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%;
-    background-color: hsl(210, 40%, 98%) !important;
+    background-color: hsl(220, 30%, 97%) !important;
     padding: 0.9375rem;
-    width: 88dvw;
     border-radius: 10px;
   }
-  /*Main content navigation layout*/
+  /*Mobile view main content navigation layout*/
   .btn_tab_active1,
   .btn_tab_active0 {
     padding: 5px 5px 2px 5px;
@@ -101,25 +99,85 @@ main {
     display: none;
   }
 
-  /*Cards layout*/
+  /*Mobile view cards/card layout*/
   .cards_container {
-    margin-top: 15px;
-    display: grid;
-    gap: 10px;
-    grid-auto-columns: minmax(200px, 2500px);
-    min-height: 296px;
-    max-height: 575px;
-    overflow-y: scroll;
-    border-radius: 10px;
-  }
-  .patient_card {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
+    height: 80%;
+    overflow-y: hidden;
   }
 
-  /*Hidden in mobile view*/
+  .cards {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .cards > details {
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: hsl(210, 40%, 96%);
+    box-shadow: 1px 5px 8px rgb(0 0 0 / 8%);
+    border: solid 1px hsl(226deg 71% 40% / 9%);
+  }
+  .cards details > summary {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .cards details > summary::after {
+    content: "ᐳ";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    transform: translate(40%) rotate(90deg);
+    transition: transform 0.18s ease-out 0ms;
+  }
+  .cards details[open] summary::after {
+    transform: translate(40%) rotate(270deg);
+  }
+
+  /*Mobile view information cards layout*/
+  details > div {
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      "day time"
+      "doc dept"
+      "gender id";
+    margin: 10px 0;
+    font-size: 0.8rem;
+    gap: 5px;
+  }
+
+  /*Mobile view patient information*/
+  .p_name {
+    width: 70%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: hsl(226, 71%, 40%);
+  }
+  .p_stat {
+    color: hsl(145, 63%, 42%);
+    width: 20%;
+    font-size: 0.8rem;
+  }
+  .p_day,
+  .p_time {
+    font-weight: 600;
+    color: hsl(222, 20%, 15%);
+  }
+  .p_doc,
+  .p_dept {
+    color: hsl(222, 20%, 15%);
+  }
+  .p_gender,
+  .p_id {
+    color: hsl(222, 14%, 40%);
+  }
+
+  /*Mobile view hidden*/
   .desktop_version {
     display: none;
     visibility: hidden;
@@ -160,6 +218,8 @@ main {
     border-width: 0px 0px 2px 0px;
     padding-bottom: 10px;
     transition: 3s;
+    color: hsl(222, 20%, 15%);
+    font-weight: bold;
   }
 
   /*Desktop view layout*/
@@ -174,7 +234,7 @@ main {
     max-height: calc(100dvh - var(--header_fixed_height) - 33px);
     overflow-y: hidden;
     border-radius: 10px;
-    background-color: hsl(210, 40%, 98%) !important;
+    background-color: hsl(220, 30%, 97%) !important;
   }
 
   .desktop_content_row {
@@ -233,6 +293,7 @@ main {
   tbody tr:hover .delete_icon {
     position: absolute;
     pointer-events: visible;
+    cursor: pointer;
     visibility: visible;
     color: hsla(0, 100%, 50%, 0.747);
     background-color: hsl(210, 40%, 98%);
@@ -260,10 +321,14 @@ main {
     padding: 15px 10px;
   }
   thead {
-    background-color: hsl(210, 40%, 98%);
-    top: 0;
     position: sticky;
+    top: 0;
     z-index: 9;
+    background-color: hsl(210, 40%, 98%);
+    color: hsl(222, 20%, 15%);
+  }
+  tbody {
+    color: hsl(222, 32%, 33%);
   }
   tbody tr:nth-child(even) {
     background-color: hsla(0, 0%, 55%, 0.068);

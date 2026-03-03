@@ -5,15 +5,14 @@
 }
 
 :root {
-  --header_fixed_height: 56px; /*The user_name try 10%*/ 
   --side_bar_fixed_width: 20dvw; /*Width for side bar*/
   --main_content_fixed_width: 70dvw; /*Width for main content*/
+  --header_fixed_height: 56px; /*Height for header*/
 
   /*Desktop view*/
 
   /*Mobile view*/
   --side_bar_fixed_width_mobile: 70dvw; /*Width of sidebar mobile view*/
-  --header_fixed_height_mobile: 10%; /*Fixed height of mobile view header*/
   --header_fixed_width_mobile: 100dvw; /*Fixed width of mobile view header*/
   --body_width_mobile: 100dvw; /*Fixed width of mobile view body*/
   --body_height_mobile: 100dvh; /*Fixed width of mobile view header*/
@@ -172,8 +171,10 @@ main li p {
   align-items: center;
 }
 .user_name_container {
+  /*For desktop {*/
   display: flex;
   width: 100%;
+  /*}*/
   justify-content: flex-end;
   padding: 1rem;
   color: hsl(226, 50%, 15%);
@@ -227,13 +228,17 @@ main {
     height: var(--body_height_mobile) !important;
   }
 
+  body > main {
+    height: 95%;
+  }
+
   body main > header {
-    height: var(--header_fixed_height_mobile) !important;
+    height: var(--header_fixed_height) !important;
     width: 100% !important;
   }
   
   body main > section {
-    height: calc(100% - var(--header_fixed_height_mobile)) !important;
+    height: calc(100% - var(--header_fixed_height)) !important;
     width: 100% !important;
   }
 
@@ -359,11 +364,11 @@ main {
     display: none;
   }
   .user_name_container > .active_sidebar span:nth-child(1) {
-    transform: rotate(45deg);
+    transform: rotate(52deg);
     top: 13px !important;
   }
   .user_name_container > .active_sidebar span:nth-child(3) {
-    transform: rotate(307deg);
+    transform: rotate(308deg);
     top: 12px !important;
     right: 31px !important;
   }
@@ -382,7 +387,25 @@ main {
   body {
     display: flex !important;
     flex-wrap: wrap;
-    min-height: 100dvh;
+  }
+
+  body{
+    width: var(--body_width_mobile) !important;
+    height: var(--body_height_mobile) !important;
+  }
+
+  body > main {
+    height: 95%;
+  }
+
+  body main > header {
+    height: var(--header_fixed_height) !important;
+    width: 100% !important;
+  }
+  
+  body main > section {
+    height: calc(100% - var(--header_fixed_height)) !important;
+    width: 100% !important;
   }
   /*Desktop view Side bar layouts*/
   aside {
@@ -433,7 +456,7 @@ main {
     border-width: 1px 0 0 0;
     align-content: flex-end;
   }
-  /*Desktop view Others*/
+  /*Desktop view, Others*/
   main {
     width: calc(100dvh - var(--side_bar_fixed_width));
   }
